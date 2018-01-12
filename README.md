@@ -1,12 +1,9 @@
 # Redesign_Webpage
 HTML och CSS Gruppuppgift 2018
 
-<<<<<<< HEAD
-Färger:
-Vit #FFFFF / rgb(255,255,255)
-Grå #dddddd / rgb(221,221,221)
-Mörkgrå #3a3a3a / rgb(58,58,58) - Text, footer
-Orange #d3672f / rgb(211,103,47)
-=======
-Detta är en ändring gjord av Alex
->>>>>>> dc1627dc0b6458535c64a0f70e860b4ced4e23e6
+<hr>
+<h4>Header-Färger:#FFFFF / rgb(255,255,255)(Vit) </h4>
+<h4>Grå #dddddd / rgb(221,221,221) </h4>
+<h4>Mörkgrå #3a3a3a / rgb(58,58,58) </h4>
+<h4>Text, footer: Orange #d3672f / rgb(211,103,47)</h4>
+
