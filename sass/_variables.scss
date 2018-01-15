@@ -8,3 +8,8 @@ $accent-color: #d3672f; //Accent color
 // FONTS
 $font-main: 'Merriweather', Helvetica, sans-serif;
 $font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// @mediaQueries
+$tablet:"only screen and (min-width: 768px)";
+$desktop:"only screen and (min-width: 1366px)";
+// $mobile:"only screen and (min-width: 640px)";
