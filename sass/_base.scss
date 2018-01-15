@@ -2,7 +2,7 @@
 
 
 html {
-    background-color: $dark-gray;
+
   }
   
   body {
@@ -13,10 +13,13 @@ html {
    
   }
   
-  
-  h1,h2,h3,h4,h5,h6 {
-    font-family: $font-myriad-pro ;
+  h1 {
+  font-family: $font-myriad-pro;
+  text-align: center;
+  color: $dark-gray;
+  font-size: 2em;
   }
+
 
   .header {
     background-image: url("../img/header-photo.jpg");

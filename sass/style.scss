@@ -3,23 +3,10 @@
 @import "_base.scss";
 @import "_mixins.scss";
 
-
-$myriad:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$black-text:#3d3d3d;
-$tablet:"only screen and (min-width: 768px)";
-$desktop:"only screen and (min-width: 1366px)";
-$full-width:55rem;
-
 body{
 	margin: 0;
 }
 
-h1 {
- font-family: $myriad;
- text-align: center;
- color: $black-text;
- font-size: 2em;
-}
 
 .section {
   &-about .container {
@@ -29,10 +16,10 @@ h1 {
     @media #{$tablet}{ padding: 5em 1rem 5rem 1rem;}
     @media #{$desktop}{ padding: 10em 1rem 10rem 1rem;}
     p{
-			font-family: $myriad;
+			font-family: $font-myriad-pro;
 			font-weight: 300;
 			text-align: center;
-			color: $black-text;
+			color: $dark-gray;
 			font-size: 1em;
 			@media #{$tablet}{ font-size: 1.5em;}
     }
@@ -48,18 +35,18 @@ h1 {
     @media #{$desktop}{ padding: 10em 1rem 10rem 1rem;}
 
       p{
-			font-family: $myriad;
+			font-family: $font-myriad-pro;
 			font-weight: 300;
 			text-align: center;
-			color: $black-text;
+			color: $dark-gray;
 			font-size: 1em;
 			@media #{$tablet}{ font-size: 1.5em;}
     }
 
     span{
-    	font-family: $myriad;
+    	font-family: $font-myriad-pro;
 			font-weight: 400;
-			color: $black-text;
+			color: $dark-gray;
 			font-size: 1em;
 			margin-bottom: 0.5rem;
     }
@@ -77,7 +64,7 @@ h1 {
   }
 
   &-team .img-container{
-  	margin-top: 1rem;
+  	margin: 1rem;
   	text-align: center;
   }
 }
