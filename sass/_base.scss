@@ -1,0 +1,28 @@
+// Just the body and base structure..
+
+
+html {
+    background-color: $dark-gray;
+  }
+  
+  body {
+   
+  }
+  
+  .container {
+   
+  }
+  
+  
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $font-myriad-pro ;
+  }
+
+  .header {
+    background-image: url("../img/header-photo.jpg");
+    background-attachment: fixed;
+    background-position: 80% 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    min-height: 36rem;
+  }
