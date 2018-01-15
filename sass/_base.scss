@@ -5,17 +5,21 @@ html {
     background-color: $dark-gray;
   }
   
+*{
+  font-family: $font-myriad-pro;
+}
+
   body {
-   
+
   }
-  
+
   .container {
-   
+
   }
-  
-  
+
+
   h1,h2,h3,h4,h5,h6 {
-    font-family: $font-myriad-pro ;
+    font-family: $font-myriad-pro;
   }
 
   .header {
