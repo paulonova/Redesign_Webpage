@@ -1,0 +1,13 @@
+@mixin button-style{
+  background-color: none;
+  color: $dark-gray;
+  border-color: $accent-color;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+@mixin flex{
+
+}

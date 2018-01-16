@@ -1,22 +1,19 @@
-// Just the body and base structure..
+//The body and base structure
+@import "_mixins.scss";
 
+*{  //Things to be implemented on all elements
+  font-family: $font-myriad-pro;
 
-html {
-    background-color: $dark-gray;
+}
+
+body {
+
   }
-  
-  body {
-   
-  }
-  
+
   .container {
-   
+
   }
-  
-  
-  h1,h2,h3,h4,h5,h6 {
-    font-family: $font-myriad-pro ;
-  }
+
 
   .header {
     background-image: url("../img/header-photo.jpg");
@@ -26,3 +23,15 @@ html {
     background-blend-mode: overlay;
     min-height: 36rem;
   }
+//Cases
+.recentProjects{
+  background-color: $light-gray;
+  
+}
+.oldWebsite{
+  @include button-style;}
+
+//reviews
+.reviews{
+
+}
