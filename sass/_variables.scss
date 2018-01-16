@@ -4,12 +4,41 @@ $dark-gray: #3d3d3d;    //For background and text on white background
 $white: #ffffff;        //For background and text on dark-gray background
 $light-gray: #dddddd;   //For background to separate sections
 $accent-color: #d3672f; //Accent color
+$image-filter: rgba(0, 0, 0, 0.4);
 
 // FONTS
-$font-main: 'Merriweather', Helvetica, sans-serif;
-$font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans", 
+"Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-myriad-pro-light: "Myriad Pro Light", Myriad, "Liberation Sans", 
+"Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 
 // @mediaQueries
 $tablet:"only screen and (min-width: 768px)";
 $desktop:"only screen and (min-width: 1366px)";
-// $mobile:"only screen and (min-width: 640px)";
+$mobile:"only screen and (min-width: 360px)";
+
+//header images size
+$dt-header-photo: url("../img/dt-header-photo.jpg");
+$pt-header-photo: url("../img/pt-header-photo.jpg");
+$mb-header-photo: url("../img/mb-header-photo.jpg");
+
+// Footer images
+$mb-footer-photo: url("../img/mb-footer-photo.png");
+$pt-footer-photo: url("../img/pt-footer-photo.png");
+$dt-footer-photo: url("../img/dt-footer-photo.png");
+
+
+//************************font sizes
+//mobiles
+$mb-headlines: 1.5rem;
+$mb-label: 1rem;
+
+//Tablets
+$tb-headlines: 2.5rem;
+$tb-label: 2rem;
+
+//Desktop
+$dt-headlines: 1.5rem;
+$dt-label: 1rem;

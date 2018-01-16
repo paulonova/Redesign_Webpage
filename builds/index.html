@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 </head>
-<body>        
+
+<body>
 
     <header class="header-container">
-        <div class="header-bkg"></div>
-
-        <nav class="header-nav">
-            <div class="topnav" id="myTopnav">
-                <a href="#weDo">What we do</a>
-                <a href="#projects">Projects</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#theTeam">The team</a>
-            </div>
-        </nav>
-
+        <div class="logo-block">
+            <img src="img/dt-logo-white.png" alt="logo">
+            <p>Old website? We redesign it!</p>
+        </div>
     </header>
-               
-    
+
+    <nav>
+        <ul class="nav">
+            <li class="nav-link">
+                <a href="#weDo">What we do</a>
+            </li>
+            <li class="nav-link">
+                <a href="#projects">Projects</a>
+            </li>
+            <li class="nav-link">
+                <a href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-link">
+                <a href="#theTeam">The team</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3 class="contact-us">Contact Us</h3>
+        <div class="form-container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="sweden">Sweden</option>
+                    <option value="danmarc">Danmarc</option>
+                    <option value="norway">Norway</option>
+                    <option value="finland">Finland</option>
+                    <option value="brazil">Brazil</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            
+        </div>
+    </footer>
+
 </body>
+
 </html>
