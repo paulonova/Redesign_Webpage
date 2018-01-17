@@ -6,8 +6,6 @@
 
 body {
 
-  }
-
 a{
   text-decoration: none;
   color: $dark-gray;
@@ -17,6 +15,20 @@ p{
   font-weight: 300;
   font-size: 100%;
 }
-.container {
 
+  h1 {
+  font-family: $font-myriad-pro;
+  text-align: center;
+  color: $dark-gray;
+  font-size: 2em;
+  }
+
+
+  .header {
+    background-image: url("../img/header-photo.jpg");
+    background-attachment: fixed;
+    background-position: 80% 30%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    min-height: 36rem;
   }
