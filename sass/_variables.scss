@@ -1,17 +1,42 @@
 
 // COLORS
-$dark-gray: rgb(58,58,58);    //For background and text on white background
-$white: rgb(255,255,255);        //For background and text on dark-gray background
-$light-gray: rgb(221,221,221);   //For background to separate sections
-$accent-color: rgb(211,103,47); //Accent color
+$dark-gray: #3d3d3d;    //For background and text on white background
+$white: #ffffff;        //For background and text on dark-gray background
+$light-gray: #dddddd;   //For background to separate sections
+$placeholder-light-gray: #9e9d9d;   //For placeholders
+
+$accent-color: #d3672f; //Accent color
+$image-filter: rgba(0, 0, 0, 0.4);
 
 // FONTS
-$font-main: 'Merriweather', Helvetica, sans-serif;
-$font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans", 
+"Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-//Media
+
+// @mediaQueries
 $tablet:"only screen and (min-width: 768px)";
 $desktop:"only screen and (min-width: 1366px)";
+$mobile:"only screen and (min-width: 360px)";
 
-//Width
-$full-width:55rem;
+//header images size
+$dt-header-photo: url("../img/dt-header-photo.jpg");
+$pt-header-photo: url("../img/pt-header-photo.jpg");
+$mb-header-photo: url("../img/mb-header-photo.jpg");
+
+// Footer image
+// $footer-photo: url("../img/footer-photo.svg");  // Show error ?????
+
+
+//************************font sizes
+//mobiles
+$mb-headlines: 1.5rem;
+$mb-label: 1rem;
+
+//Tablets
+$tb-headlines: 2.5rem;
+$tb-label: 2rem;
+
+//Desktop
+$dt-headlines: 1.5rem;
+$dt-label: 1rem;
+
