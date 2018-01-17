@@ -12,9 +12,7 @@
   min-height: 36rem;
 }
 //Cases
-.recentProjects{
-background-color: $light-gray;
-}
+
 .oldWebsite{
 @include button-style;}
 
@@ -34,6 +32,41 @@ background-color: $light-gray;
 			@media #{$tablet}{ font-size: 1.5em;}
     }
   }
+  &-recentProjects{
+    background-color: $light-gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &-recentProjects .container{
+    padding: 2rem 1rem 2rem 1rem;
+    max-width: $full-width;
+    margin: 0 auto;
+    @media #{$tablet}{ padding: 5em 1rem 5rem 1rem;}
+    @media #{$desktop}{ padding: 10em 1rem 10rem 1rem;}
+  }
+  &-recentProjects .recentProject{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  &-recentProjects .recentProject-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  &-recentProjects .img-container{
+    width: 40%;
+  }
+  &-recentProjects .text-container{
+    width: 40%;
+  }
+  &-recentProjects img{
+    height: 250px;
+  }
+  
+
   &-team{
   	background-color: #dddddd;
   }
@@ -78,3 +111,4 @@ background-color: $light-gray;
   	text-align: center;
   }
 }
+
