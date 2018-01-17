@@ -1,9 +1,7 @@
 //The body and base structure
-@import "_mixins.scss";
 
 *{  //Things to be implemented on all elements
   font-family: $font-myriad-pro;
-
 }
 
 body {
@@ -15,28 +13,10 @@ a{
   color: $dark-gray;
 }
 
-  .container {
+p{
+  font-weight: 300;
+  font-size: 100%;
+}
+.container {
 
   }
-
-
-  .header {
-    background-image: url("../img/header-photo.jpg");
-    background-attachment: fixed;
-    background-position: 80% 30%;
-    background-color: rgba(0, 0, 0, 0.6);
-    background-blend-mode: overlay;
-    min-height: 36rem;
-  }
-//Cases
-.recentProjects{
-  background-color: $light-gray;
-
-}
-.oldWebsite{
-  @include button-style;}
-
-//reviews
-.reviews{
-
-}

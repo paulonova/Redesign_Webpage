@@ -12,3 +12,8 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+@mixin olderBrowserFlex {
+  display: block;
+  float: left;
+}
