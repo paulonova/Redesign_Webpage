@@ -17,6 +17,7 @@
 @include button-style;
 }
 
+
 .section-about p{
     text-align: center;
     color: $dark-gray;
@@ -34,6 +35,22 @@
   flex-direction: row-reverse;
   justify-content: space-around;
 }
+
+//Reviews
+.reviews{
+  @include flex;
+  justify-content: center;
+}
+.review{
+  width: 150px;
+  width: 20em;
+  padding: 2rem 1rem 2rem 1rem;
+}
+.review p:last-child{
+  float: right;
+}
+
+ 
 
 .recentProject-2{
   @include flex;
@@ -70,6 +87,5 @@
     margin: 1rem;
     text-align: center;
   }
-
 
 
