@@ -12,8 +12,10 @@ a{
 }
 
 p{
+	font-family: $font-myriad-pro;
 	font-weight: 300;
 	font-size: 100%;
+	font-size: 1em;
 }
 
 h1 {
@@ -23,6 +25,14 @@ color: $dark-gray;
 font-size: 2em;
 }
 
+ span{
+  font-family: $font-myriad-pro;
+  font-weight: 400;
+   color: $dark-gray;
+   font-size: 1em;
+   margin-bottom: 0.5rem;
+ }
+
 
 .header {
 	background-image: url("../img/header-photo.jpg");
@@ -31,4 +41,14 @@ font-size: 2em;
 	background-color: rgba(0, 0, 0, 0.6);
 	background-blend-mode: overlay;
 	min-height: 36rem;
+}
+
+.container {
+    max-width: $full-width;
+    margin: 0 auto;
+    padding: 32px 16px 32px 16px;
+    padding: 2rem 1rem 2rem 1rem;
+    @media #{$tablet}{ padding: 80px 16px 80px 16px;}
+    @media #{$tablet}{ padding: 5rem 1rem 5rem 1rem;}
+    @media #{$desktop}{ padding: 10rem 1rem 10rem 1rem;}
 }
