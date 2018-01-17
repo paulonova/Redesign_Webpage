@@ -1,22 +1,21 @@
-// Just the body and base structure..
+//The body and base structure
 
-
-html {
-
-  }
-  
-*{
+*{  //Things to be implemented on all elements
   font-family: $font-myriad-pro;
 }
 
-  body {
+body {
 
-  }
+a{
+  text-decoration: none;
+  color: $dark-gray;
+}
 
-  .container {
+p{
+  font-weight: 300;
+  font-size: 100%;
+}
 
-  }
-  
   h1 {
   font-family: $font-myriad-pro;
   text-align: center;
