@@ -523,10 +523,8 @@ body {
 /* line 18, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-about .container p {
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
   text-align: center;
   color: #3d3d3d;
-  font-size: 1em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -536,12 +534,12 @@ body {
   }
 }
 
-/* line 27, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+/* line 25, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-team {
   background-color: #dddddd;
 }
 
-/* line 30, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+/* line 28, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-team .container {
   max-width: 55rem;
   margin: 0 auto;
@@ -549,20 +547,20 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 30, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+  /* line 28, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
   .section-team .container {
-    padding: 5em 1rem 5rem 1rem;
+    padding: 5rem 1rem 5rem 1rem;
   }
 }
 
 @media only screen and (min-width: 1366px) {
-  /* line 30, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+  /* line 28, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
   .section-team .container {
-    padding: 10em 1rem 10rem 1rem;
+    padding: 10rem 1rem 10rem 1rem;
   }
 }
 
-/* line 37, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+/* line 35, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-team .container p {
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -572,13 +570,13 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 37, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+  /* line 35, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
   .section-team .container p {
     font-size: 1.5em;
   }
 }
 
-/* line 46, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+/* line 44, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-team .container span {
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -587,7 +585,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* line 55, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+/* line 53, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-team .images-container {
   display: flex;
   flex-wrap: wrap;
@@ -595,13 +593,13 @@ body {
   text-align: center;
 }
 
-/* line 56, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+/* line 54, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-team .images-container img {
   height: 200px;
   width: 200px;
 }
 
-/* line 66, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
+/* line 64, /Users/Alex/Documents/Nackademin/Inlämning/Redesign_Webpage/sass/style.scss */
 .section-team .img-container {
   margin: 1rem;
   text-align: center;
