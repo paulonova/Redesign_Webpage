@@ -6,7 +6,6 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-/* line 13, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 html {
   line-height: 1.15;
   /* 1 */
@@ -21,7 +20,6 @@ html {
 /**
    * Remove the margin in all browsers (opinionated).
    */
-/* line 26, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 body {
   margin: 0;
 }
@@ -29,7 +27,6 @@ body {
 /**
    * Add the correct display in IE 9-.
    */
-/* line 34, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 article,
 aside,
 footer,
@@ -43,7 +40,6 @@ section {
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-/* line 48, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -55,7 +51,6 @@ h1 {
    * Add the correct display in IE 9-.
    * 1. Add the correct display in IE.
    */
-/* line 61, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 figcaption,
 figure,
 main {
@@ -66,7 +61,6 @@ main {
 /**
    * Add the correct margin in IE 8.
    */
-/* line 71, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 figure {
   margin: 1em 40px;
 }
@@ -75,7 +69,6 @@ figure {
    * 1. Add the correct box sizing in Firefox.
    * 2. Show the overflow in Edge and IE.
    */
-/* line 80, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -89,7 +82,6 @@ hr {
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
-/* line 91, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -103,7 +95,6 @@ pre {
    * 1. Remove the gray background on active links in IE 10.
    * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
    */
-/* line 104, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 a {
   background-color: transparent;
   /* 1 */
@@ -115,7 +106,6 @@ a {
    * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
    * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
    */
-/* line 114, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -128,7 +118,6 @@ abbr[title] {
 /**
    * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
    */
-/* line 124, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 b,
 strong {
   font-weight: inherit;
@@ -137,7 +126,6 @@ strong {
 /**
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
-/* line 133, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 b,
 strong {
   font-weight: bolder;
@@ -147,7 +135,6 @@ strong {
    * 1. Correct the inheritance and scaling of font size in all browsers.
    * 2. Correct the odd `em` font sizing in all browsers.
    */
-/* line 143, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 code,
 kbd,
 samp {
@@ -160,7 +147,6 @@ samp {
 /**
    * Add the correct font style in Android 4.3-.
    */
-/* line 154, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -168,7 +154,6 @@ dfn {
 /**
    * Add the correct background and color in IE 9-.
    */
-/* line 162, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 mark {
   background-color: #ff0;
   color: #000;
@@ -177,7 +162,6 @@ mark {
 /**
    * Add the correct font size in all browsers.
    */
-/* line 171, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -186,7 +170,6 @@ small {
    * Prevent `sub` and `sup` elements from affecting the line height in
    * all browsers.
    */
-/* line 180, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -195,12 +178,10 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 188, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
 
-/* line 192, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
@@ -210,7 +191,6 @@ sup {
 /**
    * Add the correct display in IE 9-.
    */
-/* line 203, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 audio,
 video {
   display: inline-block;
@@ -219,7 +199,6 @@ video {
 /**
    * Add the correct display in iOS 4-7.
    */
-/* line 212, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -228,7 +207,6 @@ audio:not([controls]) {
 /**
    * Remove the border on images inside links in IE 10-.
    */
-/* line 221, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 img {
   border-style: none;
 }
@@ -236,7 +214,6 @@ img {
 /**
    * Hide the overflow in IE.
    */
-/* line 229, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -247,7 +224,6 @@ svg:not(:root) {
    * 1. Change the font styles in all browsers (opinionated).
    * 2. Remove the margin in Firefox and Safari.
    */
-/* line 241, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 button,
 input,
 optgroup,
@@ -267,7 +243,6 @@ textarea {
    * Show the overflow in IE.
    * 1. Show the overflow in Edge.
    */
-/* line 257, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 button,
 input {
   /* 1 */
@@ -278,7 +253,6 @@ input {
    * Remove the inheritance of text transform in Edge, Firefox, and IE.
    * 1. Remove the inheritance of text transform in Firefox.
    */
-/* line 267, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 button,
 select {
   /* 1 */
@@ -290,7 +264,6 @@ select {
    *    controls in Android 4.
    * 2. Correct the inability to style clickable types in iOS and Safari.
    */
-/* line 278, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 button,
 html [type="button"],
 [type="reset"],
@@ -302,7 +275,6 @@ html [type="button"],
 /**
    * Remove the inner border and padding in Firefox.
    */
-/* line 289, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -314,7 +286,6 @@ button::-moz-focus-inner,
 /**
    * Restore the focus styles unset by the previous rule.
    */
-/* line 301, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -325,7 +296,6 @@ button:-moz-focusring,
 /**
    * Correct the padding in Firefox.
    */
-/* line 312, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -336,7 +306,6 @@ fieldset {
    * 3. Remove the padding so developers are not caught out when they zero out
    *    `fieldset` elements in all browsers.
    */
-/* line 323, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -356,7 +325,6 @@ legend {
    * 1. Add the correct display in IE 9-.
    * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
    */
-/* line 337, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 progress {
   display: inline-block;
   /* 1 */
@@ -367,7 +335,6 @@ progress {
 /**
    * Remove the default vertical scrollbar in IE.
    */
-/* line 346, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 textarea {
   overflow: auto;
 }
@@ -376,7 +343,6 @@ textarea {
    * 1. Add the correct box sizing in IE 10-.
    * 2. Remove the padding in IE 10-.
    */
-/* line 355, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -388,7 +354,6 @@ textarea {
 /**
    * Correct the cursor style of increment and decrement buttons in Chrome.
    */
-/* line 365, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -398,7 +363,6 @@ textarea {
    * 1. Correct the odd appearance in Chrome and Safari.
    * 2. Correct the outline style in Safari.
    */
-/* line 375, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -409,7 +373,6 @@ textarea {
 /**
    * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
    */
-/* line 384, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -419,7 +382,6 @@ textarea {
    * 1. Correct the inability to style clickable types in iOS and Safari.
    * 2. Change font properties to `inherit` in Safari.
    */
-/* line 394, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -433,7 +395,6 @@ textarea {
    * Add the correct display in IE 9-.
    * 1. Add the correct display in Edge, IE, and Firefox.
    */
-/* line 407, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 details,
 menu {
   display: block;
@@ -442,7 +403,6 @@ menu {
 /*
    * Add the correct display in all browsers.
    */
-/* line 416, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 summary {
   display: list-item;
 }
@@ -452,7 +412,6 @@ summary {
 /**
    * Add the correct display in IE 9-.
    */
-/* line 427, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 canvas {
   display: inline-block;
 }
@@ -460,7 +419,6 @@ canvas {
 /**
    * Add the correct display in IE.
    */
-/* line 435, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 template {
   display: none;
 }
@@ -470,12 +428,10 @@ template {
 /**
    * Add the correct display in IE 10-.
    */
-/* line 446, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_normalize.scss */
 [hidden] {
   display: none;
 }
 
-/* line 4, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 body {
   font-size: 1vw;
   font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -484,7 +440,6 @@ body {
 }
 
 /* Header */
-/* line 13, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .header-container {
   background-image: url("../img/mb-header-photo.jpg");
   background-repeat: no-repeat;
@@ -499,7 +454,6 @@ body {
 }
 
 /* Logo and slogan */
-/* line 28, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .logo-block img, p {
   margin: 0;
   position: absolute;
@@ -509,7 +463,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* line 37, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .logo-block img {
   position: overlay;
   display: block;
@@ -517,7 +470,6 @@ body {
   width: 55%;
 }
 
-/* line 45, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .logo-block p {
   text-align: center;
   color: #ffffff;
@@ -526,7 +478,6 @@ body {
 }
 
 /* NavBar */
-/* line 54, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 ul.nav {
   background-color: #3d3d3d;
   list-style: none;
@@ -535,25 +486,21 @@ ul.nav {
   padding: 20px 0 20px 0;
 }
 
-/* line 62, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .nav > li {
   display: inline-block;
   padding: 0 10px 0 10px;
 }
 
-/* line 67, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .nav > li > a {
   color: #ffffff;
   font-size: .7rem;
   text-decoration: none;
 }
 
-/* line 73, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .nav > li > a:hover {
   color: #d3672f;
 }
 
-/* line 79, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 h3.contact-us {
   margin: 30px 0 0 0;
   text-align: center;
@@ -562,7 +509,6 @@ h3.contact-us {
   font-size: 1.6rem;
 }
 
-/* line 87, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .form-container {
   margin: 0 auto;
   width: 250px;
@@ -572,7 +518,6 @@ h3.contact-us {
   color: #3d3d3d;
 }
 
-/* line 97, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=text], textarea {
   width: 100%;
   padding: 12px;
@@ -584,32 +529,26 @@ input[type=text], textarea {
   resize: vertical;
 }
 
-/* line 110, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=text]::placeholder, textarea::placeholder {
   color: #9e9d9d;
 }
 
-/* line 114, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #9e9d9d;
 }
 
-/* line 118, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=text]::-moz-placeholder, textarea::-moz-placeholder {
   color: #9e9d9d;
 }
 
-/* line 122, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=text]:-moz-placeholder, textarea:-moz-placeholder {
   color: #9e9d9d;
 }
 
-/* line 126, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder {
   color: #9e9d9d;
 }
 
-/* line 131, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=submit] {
   background-color: none;
   color: #3d3d3d;
@@ -620,12 +559,10 @@ input[type=submit] {
   cursor: pointer;
 }
 
-/* line 136, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 input[type=submit]:hover {
   background-color: #d3672f;
 }
 
-/* line 143, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 footer {
   background-image: url("../img/footer-photo.svg");
   background-repeat: no-repeat;
@@ -637,7 +574,6 @@ footer {
   background-size: cover;
 }
 
-/* line 157, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .footer-social-icons {
   text-align: center;
   margin: auto;
@@ -649,35 +585,30 @@ footer {
   width: 100%;
 }
 
-/* line 168, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 h2.adress {
   color: #ffffff;
   margin-right: 5%;
-  font-size: 1.7vh;
+  font-size: 3em;
   text-align: center;
 }
 
-/* line 175, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 .social-icons {
   margin: 0 auto;
   padding: 0;
   left: 50px;
 }
 
-/* line 181, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 ul.social-icons > li {
   display: inline-block;
   margin-right: 8%;
   text-decoration: none;
 }
 
-/* line 186, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 ul.social-icons > li img {
   width: 55%;
   height: auto;
 }
 
-/* line 193, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
 ul.social-icons > li img:hover {
   opacity: 0.5;
   filter: alpha(opacity=50);
@@ -686,57 +617,44 @@ ul.social-icons > li img:hover {
 
 /* Media queries */
 @media only screen and (min-width: 768px) {
-  /* line 208, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .header-container {
     background-image: url("../img/pt-header-photo.jpg");
     height: 30rem;
   }
-  /* line 213, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .logo-block p {
     font-size: 2.2rem;
   }
-  /* line 218, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .nav > li {
     padding: 0 25px 0 25px;
   }
-  /* line 222, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .nav > li > a {
     font-size: 1.5rem;
   }
-  /* line 229, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   h3.contact-us {
     font-size: 2.5rem;
   }
-  /* line 233, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .form-container {
     width: 400px;
     font-size: 1.5rem;
     color: #3d3d3d;
   }
-  /* line 239, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   input[type=submit] {
     padding: 15px 20px;
   }
-  /* line 244, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   footer {
     background-image: url("../img/footer-photo.svg");
     min-height: 25rem;
   }
-  /* line 249, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .footer-social-icons {
     top: 40%;
     width: 85%;
   }
-  /* line 254, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .footer-social-icons h2.adress {
-    font-size: 2.6vh;
     margin-right: 7%;
   }
-  /* line 260, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   ul.social-icons > li {
     margin-right: 12%;
   }
-  /* line 263, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   ul.social-icons > li img {
     width: 85%;
     height: auto;
@@ -744,61 +662,47 @@ ul.social-icons > li img:hover {
 }
 
 @media only screen and (min-width: 1366px) {
-  /* line 279, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .header-container {
     background-image: url("../img/dt-header-photo.jpg");
     height: 40rem;
   }
-  /* line 284, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .logo-block p {
     font-size: 3.5rem;
   }
-  /* line 288, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .nav > li {
     padding: 0 35px 0 35px;
   }
-  /* line 292, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .nav > li > a {
     font-size: 2rem;
   }
-  /* line 298, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   h3.contact-us {
     font-size: 3rem;
   }
-  /* line 302, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .form-container {
     width: 550px;
     font-size: 1.7rem;
     color: #3d3d3d;
   }
-  /* line 308, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   input[type=submit] {
     padding: 15px 20px;
   }
-  /* line 313, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   footer {
     background-image: url("../img/footer-photo.svg");
     min-height: 35rem;
   }
-  /* line 318, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .footer-social-icons {
     top: 40%;
     width: 85%;
   }
-  /* line 323, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   .footer-social-icons h2.adress {
     font-size: 250%;
     margin-right: 8%;
   }
-  /* line 329, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   ul.social-icons > li {
     margin-right: 12%;
   }
-  /* line 332, D:/FRONTEND UTVECKLING/SASS/Redesign_Webpage/Redesign_Webpage/sass/_base.scss */
   ul.social-icons > li img {
     width: 100%;
     height: auto;
   }
 }
-
-/*# sourceMappingURL=../builds/css/style.map */
