@@ -1,10 +1,25 @@
-//The body and base structure
+
+@import "_mixins.scss";
+
 
 *{  //Things to be implemented on all elements
 	font-family: $font-myriad-pro;
 }
 
-body {}
+html{
+  background-color: $light-gray;
+}
+
+
+body{
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1vw;
+  font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #ffffff;
+  font-weight: normal;
+}
+
 
 a{
 	text-decoration: none;
@@ -34,15 +49,6 @@ font-size: 2em;
  }
 
 
-.header {
-	background-image: url("../img/header-photo.jpg");
-	background-attachment: fixed;
-	background-position: 80% 30%;
-	background-color: rgba(0, 0, 0, 0.6);
-	background-blend-mode: overlay;
-	min-height: 36rem;
-}
-
 .container {
     max-width: $full-width;
     margin: 0 auto;
@@ -52,3 +58,8 @@ font-size: 2em;
     @media #{$tablet}{ padding: 5rem 1rem 5rem 1rem;}
     @media #{$desktop}{ padding: 10rem 1rem 10rem 1rem;}
 }
+
+
+
+  
+  
