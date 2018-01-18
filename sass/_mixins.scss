@@ -1,16 +1,20 @@
 
-@mixin button-style{
-    background-color: none;
-    color: $dark-gray;
-    border-color: $accent-color;
-    border-style: solid;
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  $placeholder-webkit: "::-webkit-input-placeholder";
-  $placeholder-webkit: "::-moz-placeholder";         
-  $placeholder-webkit: ":-ms-input-placeholder";     
-  $placeholder-webkit: ":-moz-placeholder";          
-
   
+@mixin button-style{
+  background-color: none;
+  color: $dark-gray;
+  border-color: $accent-color;
+  border-style: solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@mixin flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin olderBrowserFlex {
+  display: block;
+  float: left;
+}
