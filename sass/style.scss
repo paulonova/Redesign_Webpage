@@ -25,7 +25,7 @@
 }
 
 /* Logo and slogan */
-.logo-block img , p{
+.logo-block img , p.slogan{
     margin: 0;
     position: absolute;
     top: 50%;
@@ -42,7 +42,7 @@
   
 }
 
-.logo-block p{
+.logo-block p.slogan{
   text-align: center;
   color: $white;
   margin-top: 9%;
@@ -162,13 +162,11 @@ footer{
   left: 20px;
   right: 20px;
   height: 100px;
-  width: 100%; 
 }
 
 h2.adress{
   color:$white;
   margin-right: 5%;
-  font-size: 3em;
   text-align: center;
 }
 
@@ -208,7 +206,7 @@ ul.social-icons > li{
     height: 30rem;
   }  
   
-  .logo-block p{
+  .logo-block p.slogan{
     font-size: 2.2rem;
   }
 
@@ -391,9 +389,6 @@ ul.social-icons > li{
   justify-content: space-around;
 }
 
-.img-container, .text-container{
-  width: 29%;
-}
 
 .section-recentProjects img{
   height: 250px;
@@ -412,6 +407,7 @@ ul.social-icons > li{
   justify-content: space-around;
   text-align: center;
   img{
+    border-radius: 50%;
     height: 200px;
     width: 200px;
   }
