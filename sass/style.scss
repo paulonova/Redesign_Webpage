@@ -3,81 +3,89 @@
 @import "_base.scss";
 @import "_mixins.scss";
 
+.header {
+  background-image: url("../img/header-photo.jpg");
+  background-attachment: fixed;
+  background-position: 80% 30%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
+  min-height: 36rem;
+}
+//Cases
 
-$myriad:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$black-text:#3d3d3d;
-$tablet:"only screen and (min-width: 768px)";
-$desktop:"only screen and (min-width: 1366px)";
-$full-width:55rem;
-
-body{
-	margin: 0;
+.oldWebsite{
+@include button-style;
 }
 
-h1 {
- font-family: $myriad;
- text-align: center;
- color: $black-text;
- font-size: 2em;
+
+.section-about p{
+    text-align: center;
+    color: $dark-gray;
+    @media #{$tablet}{ font-size: 1.5em;}
 }
 
-.section {
-  &-about .container {
-    padding: 2rem 1rem 2rem 1rem;
-    max-width: $full-width;
-    margin: 0 auto;
-    @media #{$tablet}{ padding: 5em 1rem 5rem 1rem;}
-    @media #{$desktop}{ padding: 10em 1rem 10rem 1rem;}
-    p{
-			font-family: $myriad;
-			font-weight: 300;
-			text-align: center;
-			color: $black-text;
-			font-size: 1em;
-			@media #{$tablet}{ font-size: 1.5em;}
-    }
-  }
-  &-team{
-  	background-color: #dddddd;
-  }
-  &-team .container{
-  	max-width: $full-width;
-  	margin: 0 auto;
-  	padding: 2rem 1rem 2rem 1rem;
-  	@media #{$tablet}{ padding: 5em 1rem 5rem 1rem;}
-    @media #{$desktop}{ padding: 10em 1rem 10rem 1rem;}
+.section-recentProjects{
+  @include flex;
+  justify-content: space-around;
+  background-color: $light-gray;
+}
 
-      p{
-			font-family: $myriad;
-			font-weight: 300;
-			text-align: center;
-			color: $black-text;
-			font-size: 1em;
-			@media #{$tablet}{ font-size: 1.5em;}
-    }
+.recentProject{
+  @include flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
 
-    span{
-    	font-family: $myriad;
-			font-weight: 400;
-			color: $black-text;
-			font-size: 1em;
-			margin-bottom: 0.5rem;
-    }
+//Reviews
+.reviews{
+  @include flex;
+  justify-content: center;
+}
+.review{
+  width: 150px;
+  width: 20em;
+  padding: 2rem 1rem 2rem 1rem;
+}
+.review p:last-child{
+  float: right;
+}
 
+ 
+
+.recentProject-2{
+  @include flex;
+  justify-content: space-around;
+}
+
+.img-container, .text-container{
+  width: 29%;
+}
+
+.section-recentProjects img{
+  height: 250px;
+}
+
+.section-team{
+  background-color: $light-gray;
+  p{
+    text-align: center;
+    color: $dark-gray;
   }
-  &-team .images-container{
-  	img{
-  		height: 200px;
-  		width: 200px;
-  	}
-  	display: flex;
-  	flex-wrap: wrap;
-    justify-content: space-around;
+}
+
+.images-container{
+  @include flex;
+  justify-content: space-around;
+  text-align: center;
+  img{
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.img-container{
+    margin: 1rem;
     text-align: center;
   }
 
-  &-team .img-container{
-  	margin-top: 1rem;
-  	text-align: center;
-  }
-}
+

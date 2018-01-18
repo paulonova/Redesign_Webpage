@@ -1,10 +1,17 @@
 
 // COLORS
-$dark-gray: #3d3d3d;    //For background and text on white background
-$white: #ffffff;        //For background and text on dark-gray background
-$light-gray: #dddddd;   //For background to separate sections
-$accent-color: #d3672f; //Accent color
+$dark-gray: rgb(58,58,58);    //For background and text on white background
+$white: rgb(255,255,255);        //For background and text on dark-gray background
+$light-gray: rgb(221,221,221);   //For background to separate sections
+$accent-color: rgb(211,103,47); //Accent color
 
 // FONTS
 $font-main: 'Merriweather', Helvetica, sans-serif;
 $font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//Media
+$tablet:"only screen and (min-width: 768px)";
+$desktop:"only screen and (min-width: 1366px)";
+
+//Width
+$full-width:55rem;
