@@ -3,8 +3,12 @@
 @import "_base.scss";
 @import "_mixins.scss";
 
+//Clearfix - (move to other file??)
+.clearfix {
+     clear: left;
+}
 
-/* Header */
+//Header
 .header-container{
   background-image: $mb-header-photo;
   background-repeat: no-repeat;
@@ -19,7 +23,7 @@
 
 }
 
-/* Logo and slogan */
+//Logo and slogan
 .logo-block img , p.slogan{
     margin: 0;
     position: absolute;
@@ -37,15 +41,14 @@
 
 }
 
-.logo-block .slogan p{
+.logo-block p.slogan{
   text-align: center;
   color: $white;
   margin-top: 9%;
   font-size: 1rem;
 }
 
-/*NavBar*/
-
+//Navigation
 ul.nav{
   background-color: $dark-gray;
   list-style: none;
@@ -69,8 +72,15 @@ ul.nav{
   color: $accent-color;
 }
 
-// Contact form
+//Recent Projects
+.recentProject{
 
+}
+.recentProjectContainer{
+  width: 20em;
+}
+
+// Contact form
 h3.contact-us{
   margin: 30px 0 0 0;
   text-align: center;
@@ -122,7 +132,6 @@ input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder{
   color: $placeholder-light-gray;
 }
 
-
 input[type=submit]{
   @include button-style;
   cursor: pointer;
@@ -144,9 +153,7 @@ footer{
   background-size: cover;
 }
 
-
 //Footer media icons
-
 .footer-social-icons{
   text-align: center;
   margin: auto;
@@ -157,7 +164,7 @@ footer{
   height: 100px;
 }
 
-.adress h2{
+h2.adress{
   color:$white;
   margin-right: 5%;
   text-align: center;
@@ -169,7 +176,7 @@ footer{
   left: 50px;
 }
 
-.social-icons ul > li{
+ul.social-icons > li{
   display: inline-block;
   margin-right: 8%;
   text-decoration: none;
@@ -186,8 +193,11 @@ footer{
 }
 
 
+
+
+
 /* Media queries */
-/*Media query for tablet screen width 768px and up*/
+//MediaQuery for screen-size 768px
 @media only screen and (min-width: 768px) {
 
   .header-container{
@@ -195,7 +205,7 @@ footer{
     height: 30rem;
   }
 
-  .logo-block .slogan p{
+  .logo-block p.slogan{
     font-size: 2.2rem;
   }
 
@@ -207,9 +217,13 @@ footer{
     font-size: 1.5rem;
   }
 
-  // Contact us form
+  //About
+  .section-about p{
+     font-size: 1.5em;
+  }
 
-  .contact-us h3{
+  // Contact form
+  h3.contact-us{
     font-size: 2.5rem;
   }
 
@@ -224,7 +238,6 @@ footer{
   }
 
   // Footer
-
   footer{
     background-image: url("../images/footer-photo.svg");
     min-height: 25rem;
@@ -233,14 +246,13 @@ footer{
   .footer-social-icons{
     top: 40%;
     width: 85%;
-    
-    .adress h2{
-      // font-size: 3.2em;
+
+    h2.adress{
       margin-right: 7%;
     }
   }
 
-  .social-icons ul > li {
+  ul.social-icons > li {
     margin-right: 12%;
 
     img{
@@ -253,7 +265,6 @@ footer{
 
 //Media query for screen-size 1366px
 @media only screen and (min-width: 1366px) {
-
 
   .header-container{
     background-image: $dt-header-photo;
@@ -272,84 +283,7 @@ footer{
     font-size: 2rem;
   }
 
-
-//About
-
-.section-about p{
-    text-align: center;
-    color: $dark-gray;
-    @media #{$tablet}{ font-size: 1.5em;}
-}
-
-//Recent Projects
-
-.oldWebsite{
-@include button-style;
-}
-
-.section-recentProjects{
-  @include flex;
-  justify-content: space-around;
-  background-color: $light-gray;
-}
-
-.recentProject{
-  @include flex;
-  flex-direction: row-reverse;
-  justify-content: space-around;
-}
-.recentProject-2{
-  @include flex;
-  justify-content: space-around;
-}
-
-.section-recentProjects img{
-  height: 250px;
-  width: auto;
-
-}
-
-//Reviews
-.reviews{
-  @include flex;
-  justify-content: center;
-}
-.review{
-  width: 150px;
-  width: 20em;
-  padding: 2rem 1rem 2rem 1rem;
-}
-.review p:last-child{
-  float: right;
-}
-
-//The Team
-.section-team{
-  background-color: $light-gray;
-  p{
-    text-align: center;
-    color: $dark-gray;
-  }
-}
-
-.images-container{
-  @include flex;
-  justify-content: space-around;
-  text-align: center;
-  img{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-  }
-}
-
-.img-container{
-    margin: 1rem;
-    text-align: center;
-  }
-
-// Contact us form
-
+  // Contact form
   h3.contact-us{
     font-size: 3rem;
   }
@@ -375,13 +309,13 @@ footer{
     width: 85%;
 
 
-    .adress h2{
+    h2.adress{
       font-size: 250%;
       margin-right: 8%;
     }
   }
 
-  .social-icons ul > li {
+  ul.social-icons > li {
     margin-right: 12%;
 
     img{
@@ -390,3 +324,76 @@ footer{
     }
   }
 }
+
+
+//About
+.section-about p{
+    text-align: center;
+    color: $dark-gray;
+}
+//Cases
+.oldWebsite{
+@include button-style;
+}
+.RecentProjects{
+  @include flex;
+  justify-content: space-around;
+  background-color: $light-gray;
+}
+
+.recentProject{
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+//Reviews
+.reviews{
+  @include flex;
+  justify-content: center;
+}
+.review{
+  width: 150px;
+  width: 20em;
+  padding: 2rem 1rem 2rem 1rem;
+}
+.review p:last-child{
+  float: right;
+}
+
+.recentProject:nth-child(odd){
+  @include flex;
+  justify-content: space-around;
+}
+
+.sectionRecentProjects {
+  @include flex;
+  justify-content: space-around;
+  background-color: $light-gray;
+  img{
+    height: 250px;
+  }
+}
+
+.section-team{
+  background-color: $light-gray;
+  p{
+    text-align: center;
+    color: $dark-gray;
+  }
+}
+
+.images-container{
+  @include flex;
+  justify-content: space-around;
+  text-align: center;
+  img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.img-container{
+    margin: 1rem;
+    text-align: center;
+  }

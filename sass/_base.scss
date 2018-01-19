@@ -24,7 +24,6 @@ a{
 }
 
 p{
-	font-family: $font-myriad-pro;
 	font-weight: 300;
 	font-size: 100%;
 	font-size: 1em;
@@ -37,6 +36,9 @@ color: $dark-gray;
 font-size: 2em;
 }
 
+li{
+	list-style: none;
+}
  span{
   font-family: $font-myriad-pro;
   font-weight: 400;
