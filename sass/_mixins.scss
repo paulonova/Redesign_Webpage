@@ -1,5 +1,5 @@
 
-  
+
 @mixin button-style{
   background-color: none;
   color: $dark-gray;
@@ -14,7 +14,7 @@
   flex-wrap: wrap;
 }
 
-@mixin olderBrowserFlex {
+@mixin float {
   display: block;
   float: left;
 }
