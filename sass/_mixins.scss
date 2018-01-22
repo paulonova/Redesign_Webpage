@@ -1,4 +1,17 @@
 
+@mixin header-style ($image){
+  background-image: $image;
+  background-repeat: no-repeat;
+  position: relative;
+  width:100%;
+  height: 100%;
+  background-position: center center;
+  background-color: $image-filter;
+  background-blend-mode: overlay;
+  min-height: 15rem;
+  background-size: cover;
+}
+  
 @mixin button-style{
   background-color: rgba(0,0,0,0.0);
   color: $dark-gray;
@@ -12,7 +25,27 @@
   }
 }
 
+@mixin button-scrollback{
+  display: none;
+  position: fixed;  
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $accent-color;
+  color: $white;
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:hover{
+    background-color: $image-filter;
+  }
+}
+
 @mixin flex{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
 }
