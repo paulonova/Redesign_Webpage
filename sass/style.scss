@@ -125,6 +125,16 @@ input[type=submit]:hover{
   background-color: $accent-color;
 }
 
+
+// Button scrollup
+
+button#myBtn{
+  @include button-scrollback;
+}
+
+
+
+
 // Footer
 footer{
   background-image: url("../images/footer-photo.svg");
