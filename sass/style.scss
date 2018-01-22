@@ -10,7 +10,7 @@
 
 //Header
 .header-container{
-  background-image: $mb-header-photo;
+  background-image: $mb-header-photo; //doesn't need to be a variable
   background-repeat: no-repeat;
   position: relative;
   width:100%;
@@ -73,6 +73,124 @@ ul.nav{
   color: $accent-color;
 }
 
+//About
+.section-about p{
+    text-align: center;
+    color: $dark-gray;
+    @media #{$tablet}{ font-size: 1.5em;}
+}
+
+//Cases - Projects
+.recentProjects{
+  background-color: $light-gray;
+  @media #{$tablet}{
+    :nth-child(odd){ //Changes placement of each and every project
+      flex-direction: row-reverse;
+    }
+  }
+}
+.recentProject{
+  /*@include float;*/
+  @include flex;
+  justify-content: center;
+  img{
+    width: 100%;
+  }
+  @media #{$tablet}{
+    justify-content: space-around;
+    padding-top: 2em;
+    img{
+      width: 250px;
+      }
+  }
+  @media #{$desktop}{
+    justify-content: space-between;
+    padding:2em;
+    img{
+      width: 100%;
+    }
+  }
+}
+
+.recentProjectContainer{
+  padding-top: 32px;
+  padding-top: 2em;
+
+  @media #{$tablet}{
+    width: 15em;
+  }
+  @media #{$desktop}{
+    width: 300px;
+    width: 25em;
+  }
+}
+
+.recentProjectContainer:nth-child(even){ //The textarea of projects
+  width: 20em;
+  padding-bottom:32px;
+  padding-bottom: 2em;
+  text-align: center;
+  @media #{$tablet}{
+    text-align: left;
+    padding:0;
+    width: 15em;
+  }
+  @media #{$desktop}{
+    width: 20em;
+  }
+
+}
+
+.oldWebsite{
+@include button-style;
+}
+
+//Reviews
+.reviews{
+  @include flex;
+  justify-content: center;
+}
+.review{
+  width: 270px;
+  width: 15em;
+  padding: 30px;
+  padding: 2em;
+
+  :nth-child(2){ //height to keep the quoted person's name at bottom
+     height: 80px;
+     height: 5em;
+  }
+  :last-child{ //Quoted person's name to the right
+    float: right;
+  }
+}
+//The Team
+.section-team{
+  background-color: $light-gray;
+  p{
+    text-align: center;
+    color: $dark-gray;
+  }
+}
+
+.images-container{
+  @include flex;
+  justify-content: space-around;
+  text-align: center;
+  img{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+.img-container{
+   @include float;
+   margin: 20px;
+    margin: 1rem;
+    text-align: center;
+  }
+
 // Contact form
 h3.contact-us{
   margin: 30px 0 0 0;
@@ -126,7 +244,6 @@ input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder{
 
 input[type=submit]{
   @include button-style;
-  cursor: pointer;
 }
 
 input[type=submit]:hover{
@@ -316,74 +433,3 @@ ul.social-icons > li{
     }
   }
 }
-.section-about p{
-    text-align: center;
-    color: $dark-gray;
-    @media #{$tablet}{ font-size: 1.5em;}
-}
-
-//Cases - Projects
-.recentProjects{
-  @include flex;
-  justify-content: center;
-  background-color: $light-gray;
-  img{
-    height: 250px;
-  }
-}
-.recentProject:nth-child(odd){
-  flex-direction: row-reverse;
-}
-.recentProjectContainer{
-  @include float;
-  width: 250px;
-  width: 20em;
-  padding: 45px;
-  padding: 3em;
-}
-.oldWebsite{
-@include button-style;
-}
-
-//Reviews
-.reviews{
-  @include flex;
-  justify-content: center;
-}
-.review{
-  @include float;
-  width: 150px;
-  width: 20em;
-  padding: 30px;
-  padding: 2rem 1rem 2rem 1rem;
-}
-.review p:last-child{
-  float: right;
-}
-
-//The Team
-.section-team{
-  background-color: $light-gray;
-  p{
-    text-align: center;
-    color: $dark-gray;
-  }
-}
-
-.images-container{
-  @include flex;
-  justify-content: space-around;
-  text-align: center;
-  img{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-  }
-}
-
-.img-container{
-   @include float;
-   margin: 20px;
-    margin: 1rem;
-    text-align: center;
-  }

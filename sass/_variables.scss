@@ -13,9 +13,8 @@ $font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans",
 
 
 // @mediaQueries
-$tablet:"only screen and (min-width: 768px)"; //remove all these?? They are not used in the code?/Elli
+$tablet:"only screen and (min-width: 768px)"; 
 $desktop:"only screen and (min-width: 1366px)";
-$mobile:"only screen and (min-width: 360px)";
 
 //header images size
 $dt-header-photo: url("../images/dt-header-photo.jpg");
