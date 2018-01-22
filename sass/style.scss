@@ -130,6 +130,8 @@ input[type=submit]:hover{
 
 button#myBtn{
   @include button-scrollback;
+  bottom: 20px;
+  right: 30px;
 }
 
 
@@ -150,15 +152,31 @@ footer{
 //Footer media icons
 .footer-social-icons{
   text-align: center;
-  margin: auto;
+  margin: 2em auto;
   position: absolute;
   top: 35%;
   left: 20px;
   right: 20px;
   height: 100px;
+
+  .social-icons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-adress{
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
+
+
 h2.adress{
+  font-size: 1rem;
+  margin: 0;
   color:$white;
   margin-right: 5%;
   text-align: center;
@@ -243,6 +261,7 @@ ul.social-icons > li{
     width: 85%;
 
     h2.adress{
+      font-size: 1.6rem;
       margin-right: 7%;
     }
   }
@@ -285,9 +304,6 @@ ul.social-icons > li{
 
 
   .form-container{
-    // background-color: $light-gray;
-    // border: .5px solid $light-gray;
-    // border-radius: 25px;
     width: 55%;
     max-width: 1300px;
 
