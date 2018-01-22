@@ -2,128 +2,131 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Redesign</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Redesign</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+  <script src="js/script.js" prefer></script>
 </head>
 
 <body>
 
-    <header class="header-container">
-        <div class="logo-block">
-            <img src="img/dt-logo-white.png" alt="logo">
-            <p class="slogan">Old website? We redesign it!</p>
+  <!--Header image+logo-->
+  <header class="header-container">
+    <div class="logo-block">
+      <img src="images/dt-logo-white.png" alt="logo">
+      <p class="slogan">Old website? We redesign it!</p>
+    </div>
+  </header>
+
+  <!--Navigation-->
+  <nav>
+    <ul class="nav">
+      <li class="nav-link">
+        <a href="#weDo">What we do</a>
+      </li>
+      <li class="nav-link">
+        <a href="#projects">Projects</a>
+      </li>
+      <li class="nav-link">
+        <a href="#reviews">Reviews</a>
+      </li>
+      <li class="nav-link">
+        <a href="#theTeam">The team</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!--About-->
+  <section id="weDo" class="section-about">
+    <div class="container">
+      <h1>What we do</h1>
+      <p>
+        We redesign your old webpage focusing on usability, liability and a professional concept that you future customers will feel
+        safe with. Giving you more value from your site.
+      </p>
+    </div>
+  </section>
+
+  <!-- Earlier Cases -->
+  <section id="projects" class="recentProjects">
+    <div class="container">
+      <h1>Recent projects</h1>
+
+      <article class="recentProject">
+        <div class="recentProjectContainer">
+          <img src="images/wedler.png" alt="">
         </div>
-    </header>
+        <div class="recentProjectContainer">
+          <h2>Wedler</h2>
+          <p>Wedler had managed their own website for many years but felt like they wanted professional help to stay in the
+            game. And we gave their side a well needed facelift! </p>
+          <button type="button" name="oldWebsite" class="oldWebsite">
+            <a href="http://www.thebiguglywebsite.com/">Old website</a>
+          </button>
+        </div>        
+      </article>
 
-    <nav>
-        <ul class="nav">
-            <li class="nav-link">
-                <a href="#weDo">What we do</a>
-            </li>
-            <li class="nav-link">
-                <a href="#projects">Projects</a>
-            </li>
-            <li class="nav-link">
-                <a href="#reviews">Reviews</a>
-            </li>
-            <li class="nav-link">
-                <a href="#theTeam">The team</a>
-            </li>
-        </ul>
-    </nav>
+      <article class="recentProject">
+        <div class="recentProjectContainer">
+          <img src="images/glc.png" alt="">
+        </div>
+        <div class="recentProjectContainer">
+          <h2>GLC Solutions</h2>
+          <p>When we were first aproched by GLC Solutions their website had not been touched since 2007 but with our help that
+            all changed. </p>
+          <button type="button" name="oldWebsite" class="oldWebsite">
+            <a href="http://www.thebiguglywebsite.com/">Old website</a>
+          </button>
+        </div>
+      </article>
 
+    </div>
+  </section>
+  <div class="clearfix"></div>
 
-<!-- ****************************************** Här kommer Alex och Elinor arbete -->
+  <!-- Reviews -->
+  <section id="reviews" class="reviews">
+    <article class="review">
+      <img src="images/shigoto.svg" alt="">
+      <p>”Redesign changed the whole potential of our website. A true from zero to hero story! They did everything we could
+        have hoped for. We can truly recomend redesign!”</p>
+      <p>-Donna Noble, CEO</p>
+    </article>
 
+    <article class="review">
+      <img src="images/gamez.svg" alt="">
+      <p>”I’ve never been as happy as when i saw our new site. We are finally back in the game. And the service was really good
+        as well”</p>
+      <p>-Rudolf Heinrich, CTO</p>
+    </article>
 
-<!--About-->
-<section class="section-about">
-  <div class="container">
-    <h1>What we do</h1>
-    <p>
-      We redesign your old webpage focusing on usability,
-      liability and a professional concept that you future
-      customers will feel safe with. Giving you more value
-      from your site.
-    </p>
-  </div>
-</section>
+    <article class="review">
+      <img src="images/again.svg" alt="">
+      <p>”We wery truly satisfied with the new design. Redesign is a delight to work with.” </p>
+      <p>-Daniell Hall, CFO</p>
+    </article>
+  </section>
+  <div class="clearfix"></div>
 
-<!-- Earlier Cases -->
-<section class="section-recentProjects">
-<div class="container">
-<h1>Recent project</h1>
-<article class="recentProject">
-  <div class="img-container">
-  <img src="images/wedler.png" alt="">
-  </div>
-  <div class="text-container">
-  <h2>Wedler</h2>
-  <p>Wedler had managed their own website for many years but felt like they
-    wanted professional help to stay in the game. And we gave their side
-    a well needed facelift! </p>
-  <button type="button" name="oldWebsite" class="oldWebsite"><a href="http://www.thebiguglywebsite.com/">Old website</a></button>
-  </div>
-</article>
-<article class="recentProject-2">
-  <div class="img-container-2">
-    <img src="images/glc.png" alt="">
-  </div>
-  <div class="text-container">
-    <h2>GLC Solutions</h2>
-    <p>When we were first aproched by GLC Solutions their website had not
-      been touched since 2007 but with our help that all changed. </p>
-    <button type="button" name="oldWebsite" class="oldWebsite"><a href="http://www.thebiguglywebsite.com/">Old website</a></button>
-  </div>
-</article>
-</div>
-</section>
-
-<!-- Reviews -->
-<section class="reviews">
-<article class="review">
-  <img src="images/shigoto.svg" alt="">
-  <p>”Redesign changed the whole potential of our website. A true from
-    zero to hero story! They did everything we could have hoped for.
-    We can truly recomend redesign!”</p>
-  <p>-Donna Noble, CEO</p>
-</article>
-
-<article class="review">
-  <img src="images/gamez.svg" alt="">
-  <p>”I’ve never been as happy as when i saw our new site. We are finally back
-    in the game. And the service was really good as well”</p>
-  <p>-Rudolf Heinrich, CTO</p>
-</article>
-
-<article class="review">
-  <img src="images/again.svg" alt="">
-  <p>”We wery truly satisfied with
-    the new design. Redesign is a delight to work with.” </p>
-  <p>-Daniell Hall, CFO</p>
-</article>
-</section>
-<!--The Team-->
-<section class="section-team">
+  <!--The Team-->
+  <section id="theTeam" class="section-team">
     <div class="container">
       <h1>The team</h1>
       <div class="images-container">
         <div class="img-container">
           <img src="images/alex.png" alt="">
           <p>Alexander
-            <br>
-            Afzelius Puccini
+            <br> Afzelius Puccini
           </p>
           <span>Fullstack developer</span>
         </div>
         <div class="img-container">
           <img src="images/elli.png" alt="">
           <p>Ellinor
-            <br>
-            Nilsson Kaufeldt
+            <br> Nilsson Kaufeldt
             <br>
           </p>
           <span>Frontend developer</span>
@@ -131,59 +134,83 @@
         <div class="img-container">
           <img src="images/paulo.png" alt="">
           <p>Paulo
-            <br>
-            Vila Nova
+            <br> Vila Nova
           </p>
           <span>Senior developer</span>
         </div>
       </div>
     </div>
-</section>
+  </section>
+  <div class="clearfix"></div>
 
+  <!--Contact-->
 
+  <section>
+    <h1 class="contact-us">Contact Us</h1>
+    <div>
+      <form class="form-container">
 
-
-<!-- ****************************** Slut med Alex och Elinor arbete.. -->
-
-    <section>
-        <h3 class="contact-us">Contact Us</h3>
-        <div class="form-container">
-            <form action="/action_page.php">
+        <div class="form-row">
+            <div >
                 <label for="lname">Name</label>
                 <input type="text" id="lname" name="name" placeholder="Your name..">
-
+            </div>
+            <div>
                 <label for="lemail">Email</label>
                 <input type="text" id="lemail" name="email" placeholder="Your email..">
+            </div>
 
+        </div>
+        
+        <div class="form-row">
+            <div>
                 <label for="lcompany">Company</label>
                 <input type="text" id="lcompany" name="company" placeholder="Company..">
-
+            </div>
+            <div>
                 <label for="lphone">Phone</label>
                 <input type="text" id="lphone" name="phone" placeholder="Phone..">
-
-                <label for="subject">Message</label>
-                <textarea id="subject" name="subject" placeholder="Send us a message.." style="height:200px"></textarea>
-
-                <input type="submit" value="Send">
-            </form>
-        </div>
-    </section>
-
-
-    <footer>
-            <div class="footer-social-icons">                    
-                    <ul class="social-icons">
-                        <li><img src="img/ic-facebook.png"></li>
-                        <li><img src="img/ic-instagr.png"></li>
-                        <li><img src="img/ic-tweeter.png"></li>
-                    </ul>
-                    <h2 class="adress">Mäster Samuelsgatan 42</h2>
-                    <h2 class="adress">111 57 - Stockholm</h2>
             </div>
-    </footer>
+        </div>
+        
+
+        <div class="form-row-textarea">
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Send us a message.." style="height:200px"></textarea>
+        </div>
+        <div class="form-row-button">
+            <input type="submit" value="Send">
+        </div> 
+      </form>
+    </div>
+  </section>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+
+  <!--Footer-->
+  <footer>
+    <div class="footer-social-icons">
+      <ul class="social-icons">
+        <li>
+          <img src="images/ic-facebook.png">
+        </li>
+        <li>
+          <img src="images/ic-instagr.png">
+        </li>
+        <li>
+          <img src="images/ic-tweeter.png">
+        </li>
+      </ul>
+      <div class="footer-adress">
+          <h2 class="adress">Mäster Samuelsgatan 42</h2>
+          <h2 class="adress">111 57 - Stockholm</h2>
+      </div>
+      
+    </div>
+  </footer>
+
 
 </body>
 
 </html>
-
-

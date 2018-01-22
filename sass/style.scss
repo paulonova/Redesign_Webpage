@@ -4,27 +4,19 @@
 @import "_mixins.scss";
 
 
-
-// *********************************************** Paulo - Header, Form, Footer
-// ****************************************************************************
-
-
-/* Header */
-.header-container{
-  background-image: $mb-header-photo;
-  background-repeat: no-repeat;
-  position: relative;
-  width:100%;
-  height: 100%;
-  background-position: center;
-  background-color: $image-filter;
-  background-blend-mode: overlay;
-  min-height: 15rem;
-  background-size: cover;
-  
+//Clearfix - (move to other file??)
+.clearfix {
+     clear: left;
 }
 
-/* Logo and slogan */
+//Header
+.header-container{
+  @include header-style($mb-header-photo);  
+
+}
+
+
+//Logo and slogan
 .logo-block img , p.slogan{
     margin: 0;
     position: absolute;
@@ -39,7 +31,7 @@
   display: block;
   margin: 0 auto;
   width: 55%;
-  
+
 }
 
 .logo-block p.slogan{
@@ -49,8 +41,7 @@
   font-size: 1rem;
 }
 
-/* NavBar */
-
+//Navigation
 ul.nav{
   background-color: $dark-gray;
   list-style: none;
@@ -74,8 +65,7 @@ ul.nav{
   color: $accent-color;
 }
 
-// Contact us form
-
+// Contact form
 h3.contact-us{
   margin: 30px 0 0 0;
   text-align: center;
@@ -92,7 +82,6 @@ h3.contact-us{
   font-size: 1rem;
   color: $dark-gray;
 }
-
 
 input[type=text],textarea{
   width: 100%;
@@ -127,7 +116,6 @@ input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder{
   color: $placeholder-light-gray;
 }
 
-
 input[type=submit]{
   @include button-style;
   cursor: pointer;
@@ -138,10 +126,23 @@ input[type=submit]:hover{
 }
 
 
+// Button scrollup
+
+button#myBtn{
+  @include button-scrollback;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
 
 // Footer
 footer{
-  background-image: url("../img/footer-photo.svg");
+  background-image: url("../images/footer-photo.svg");
   background-repeat: no-repeat;
   position: relative;
   width:100%;
@@ -151,20 +152,34 @@ footer{
   background-size: cover;
 }
 
-
 //Footer media icons
-
-.footer-social-icons{ 
+.footer-social-icons{
   text-align: center;
-  margin: auto;
+  margin: 2em auto;
   position: absolute;
-  top: 35%;
+  top: 50px;;
   left: 20px;
   right: 20px;
   height: 100px;
+
+  .social-icons{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-adress{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 }
 
+
+
 h2.adress{
+  font-size: 1rem;
+  margin: 0;
   color:$white;
   margin-right: 5%;
   text-align: center;
@@ -182,14 +197,15 @@ ul.social-icons > li{
   text-decoration: none;
 
   img{
-    width: 55%; 
+    width: 55%;
     height: auto;
-  }  
+    &:hover{
+      opacity: 0.5;
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
 
-  img:hover{
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
   }
+
 }
 
 
@@ -197,31 +213,32 @@ ul.social-icons > li{
 
 
 /* Media queries */
-// *********************************************  MediaQuery for screen-size 768px
+//MediaQuery for screen-size 768px
 @media only screen and (min-width: 768px) {
-
 
   .header-container{
     background-image: $pt-header-photo;
     height: 30rem;
-  }  
-  
+  }
+
   .logo-block p.slogan{
     font-size: 2.2rem;
   }
 
-  
   .nav > li{
     padding: 0 25px 0 25px;
   }
-  
+
   .nav > li > a{
     font-size: 1.5rem;
   }
 
+  //About
+  .section-about p{
+     font-size: 1.5em;
+  }
 
-  // Contact us form
-
+  // Contact form
   h3.contact-us{
     font-size: 2.5rem;
   }
@@ -238,17 +255,16 @@ ul.social-icons > li{
 
   // Footer
   footer{
-    background-image: url("../img/footer-photo.svg");
+    background-image: url("../images/footer-photo.svg");
     min-height: 25rem;
   }
 
-  .footer-social-icons{ 
+  .footer-social-icons{
     top: 40%;
     width: 85%;
-    
-  
+
     h2.adress{
-      // font-size: 3.2em;
+      font-size: 1.6rem;
       margin-right: 7%;
     }
   }
@@ -257,45 +273,60 @@ ul.social-icons > li{
     margin-right: 12%;
 
     img{
-      width: 85%; 
+      width: 85%;
       height: auto;
     }
   }
 }
 
 
-// *********************************************  MediaQuery for screen-size 1366px
+//Media query for screen-size 1366px
 @media only screen and (min-width: 1366px) {
-  
 
   .header-container{
     background-image: $dt-header-photo;
     height: 40rem;
-  }  
+  }
 
-  .logo-block p{
+  .logo-block p.slogan{
     font-size: 3.5rem;
   }
 
   .nav > li{
     padding: 0 35px 0 35px;
   }
-  
+
   .nav > li > a{
     font-size: 2rem;
   }
 
-  // Contact us form
-
+  // Contact form
   h3.contact-us{
     font-size: 3rem;
   }
 
+
   .form-container{
-    width: 550px;
-    font-size: 1.7rem;
-    color: $dark-gray;
+    width: 55%;
+    max-width: 1300px;
+
+    .form-row{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    }
+    
   }
+
+  .form-row :nth-child(1){
+    flex-grow: 1;
+}
+  .form-row :nth-child(2) {
+    flex-grow: 1;
+}   
+  
 
   input[type=submit]{
     padding: 15px 20px;
@@ -303,15 +334,15 @@ ul.social-icons > li{
 
   // Footer
   footer{
-    background-image: url("../img/footer-photo.svg");
+    background-image: url("../images/footer-photo.svg");
     min-height: 35rem;
   }
 
-  .footer-social-icons{ 
+  .footer-social-icons{
     top: 40%;
     width: 85%;
-    
-  
+
+
     h2.adress{
       font-size: 250%;
       margin-right: 8%;
@@ -322,32 +353,14 @@ ul.social-icons > li{
     margin-right: 12%;
 
     img{
-      width: 100%;  // porcentagem !!!!!
+      width: 100%; 
       height: auto;
     }
-
   }
-  
 }
-  
 
 
 
-
-
-
-
-
-
-// *********************************************** Elinor och Alex 
-// ****************************************************************************
-
-
-//Cases
-
-.oldWebsite{
-@include button-style;
-}
 
 
 .section-about p{
@@ -356,16 +369,27 @@ ul.social-icons > li{
     @media #{$tablet}{ font-size: 1.5em;}
 }
 
-.section-recentProjects{
+//Cases - Projects
+.recentProjects{
   @include flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: $light-gray;
+  img{
+    height: 250px;
+  }
 }
-
-.recentProject{
-  @include flex;
+.recentProject:nth-child(odd){
   flex-direction: row-reverse;
-  justify-content: space-around;
+}
+.recentProjectContainer{
+  @include float;
+  width: 250px;
+  width: 20em;
+  padding: 45px;
+  padding: 3em;
+}
+.oldWebsite{
+@include button-style;
 }
 
 //Reviews
@@ -374,26 +398,17 @@ ul.social-icons > li{
   justify-content: center;
 }
 .review{
+  @include float;
   width: 150px;
   width: 20em;
+  padding: 30px;
   padding: 2rem 1rem 2rem 1rem;
 }
 .review p:last-child{
   float: right;
 }
 
- 
-
-.recentProject-2{
-  @include flex;
-  justify-content: space-around;
-}
-
-
-.section-recentProjects img{
-  height: 250px;
-}
-
+//The Team
 .section-team{
   background-color: $light-gray;
   p{
@@ -414,8 +429,8 @@ ul.social-icons > li{
 }
 
 .img-container{
+   @include float;
+   margin: 20px;
     margin: 1rem;
     text-align: center;
   }
-
-

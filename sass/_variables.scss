@@ -1,27 +1,27 @@
 
-// COLORS
-$dark-gray: #3d3d3d;    //For background and text on white background
-$white: #ffffff;        //For background and text on dark-gray background
-$light-gray: #dddddd;   //For background to separate sections
-$placeholder-light-gray: #9e9d9d;   //For placeholders
 
-$accent-color: #d3672f; //Accent color
+// COLORS
+$dark-gray: rgb(58,58,58);    //For background and text on white background
+$white: rgb(255,255,255);        //For background and text on dark-gray background
+$light-gray: rgb(221,221,221);   //For background to separate sections
+$placeholder-light-gray: rgb(158,157,157);   //For placeholders
+$accent-color: rgb(211,103,47); //Accent color
 $image-filter: rgba(0, 0, 0, 0.4);
 
 // FONTS
-$font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans", 
+$font-myriad-pro:"Myriad Pro", Myriad, "Liberation Sans",
 "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 // @mediaQueries
-$tablet:"only screen and (min-width: 768px)";
+$tablet:"only screen and (min-width: 768px)"; //remove all these?? They are not used in the code?/Elli
 $desktop:"only screen and (min-width: 1366px)";
 $mobile:"only screen and (min-width: 360px)";
 
 //header images size
-$dt-header-photo: url("../img/dt-header-photo.jpg");
-$pt-header-photo: url("../img/pt-header-photo.jpg");
-$mb-header-photo: url("../img/mb-header-photo.jpg");
+$dt-header-photo: url("../images/dt-header-photo.jpg");
+$pt-header-photo: url("../images/pt-header-photo.jpg");
+$mb-header-photo: url("../images/mb-header-photo.jpg");
 
 
 //Width

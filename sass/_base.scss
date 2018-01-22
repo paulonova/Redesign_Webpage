@@ -1,6 +1,4 @@
-
 @import "_mixins.scss";
-
 
 *{  //Things to be implemented on all elements
 	font-family: $font-myriad-pro;
@@ -8,15 +6,12 @@
 
 html{
   background-color: $light-gray;
+  width: 100%;
 }
-
 
 body{
-
-  background-color: #ffffff;
-
+  background-color: $white;
 }
-
 
 a{
 	text-decoration: none;
@@ -24,27 +19,26 @@ a{
 }
 
 p{
-	font-family: $font-myriad-pro;
 	font-weight: 300;
 	font-size: 100%;
 	font-size: 1em;
 }
 
 h1 {
-font-family: $font-myriad-pro;
 text-align: center;
 color: $dark-gray;
 font-size: 2em;
 }
 
+li{
+	list-style: none;
+}
  span{
-  font-family: $font-myriad-pro;
   font-weight: 400;
    color: $dark-gray;
    font-size: 1em;
    margin-bottom: 0.5rem;
  }
-
 
 .container {
     max-width: $full-width;
@@ -55,8 +49,3 @@ font-size: 2em;
     @media #{$tablet}{ padding: 5rem 1rem 5rem 1rem;}
     @media #{$desktop}{ padding: 10rem 1rem 10rem 1rem;}
 }
-
-
-
-  
-  
