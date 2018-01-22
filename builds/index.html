@@ -54,9 +54,10 @@
   <section id="projects" class="recentProjects">
     <div class="container">
       <h1>Recent projects</h1>
+
       <article class="recentProject">
         <div class="recentProjectContainer">
-          <img src="images/wedler.png" alt="">
+          <img src="images/wedler.png" style="width: 100px; height: auto"  alt="">
         </div>
         <div class="recentProjectContainer">
           <h2>Wedler</h2>
@@ -65,11 +66,12 @@
           <button type="button" name="oldWebsite" class="oldWebsite">
             <a href="http://www.thebiguglywebsite.com/">Old website</a>
           </button>
-        </div>
+        </div>        
       </article>
+
       <article class="recentProject">
         <div class="recentProjectContainer">
-          <img src="images/glc.png" alt="">
+          <img src="images/glc.png" style="width: 100px; height: auto" alt="">
         </div>
         <div class="recentProjectContainer">
           <h2>GLC Solutions</h2>
@@ -80,6 +82,7 @@
           </button>
         </div>
       </article>
+
     </div>
   </section>
   <div class="clearfix"></div>
@@ -142,26 +145,53 @@
 
   <!--Contact-->
 
+  <!-- <form>
+      <input type="text" placeholder="Your Name*">
+      <textarea placeholder="Type your message here..."></textarea>
+      <input type="text" placeholder="Your E-Mail Address*">
+      <textarea placeholder="Subject"></textarea>
+      <input type="submit" value="SEND!">
+  </form> -->
+
+
+
+
   <section>
     <h1 class="contact-us">Contact Us</h1>
-    <div class="form-container">
-      <form action="/action_page.php">
-        <label for="lname">Name</label>
-        <input type="text" id="lname" name="name" placeholder="Your name..">
+    <div>
+      <form class="form-container">
 
-        <label for="lemail">Email</label>
-        <input type="text" id="lemail" name="email" placeholder="Your email..">
+        <div class="form-row">
+            <div >
+                <label for="lname">Name</label>
+                <input type="text" id="lname" name="name" placeholder="Your name..">
+            </div>
+            <div>
+                <label for="lemail">Email</label>
+                <input type="text" id="lemail" name="email" placeholder="Your email..">
+            </div>
 
-        <label for="lcompany">Company</label>
-        <input type="text" id="lcompany" name="company" placeholder="Company..">
+        </div>
+        
+        <div class="form-row">
+            <div>
+                <label for="lcompany">Company</label>
+                <input type="text" id="lcompany" name="company" placeholder="Company..">
+            </div>
+            <div>
+                <label for="lphone">Phone</label>
+                <input type="text" id="lphone" name="phone" placeholder="Phone..">
+            </div>
+        </div>
+        
 
-        <label for="lphone">Phone</label>
-        <input type="text" id="lphone" name="phone" placeholder="Phone..">
-
-        <label for="subject">Message</label>
-        <textarea id="subject" name="subject" placeholder="Send us a message.." style="height:200px"></textarea>
-
-        <input type="submit" value="Send">
+        <div class="form-row-textarea">
+            <label for="subject">Message</label>
+            <textarea id="subject" name="subject" placeholder="Send us a message.." style="height:200px"></textarea>
+        </div>
+        <div class="form-row-button">
+            <input type="submit" value="Send">
+        </div> 
       </form>
     </div>
   </section>

@@ -178,12 +178,13 @@ ul.social-icons > li{
   img{
     width: 55%;
     height: auto;
+    &:hover{
+      opacity: 0.5;
+      filter: alpha(opacity=50); /* For IE8 and earlier */
+    }
+
   }
 
-  img:hover{
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-  }
 }
 
 
@@ -282,11 +283,31 @@ ul.social-icons > li{
     font-size: 3rem;
   }
 
+
   .form-container{
-    width: 550px;
-    font-size: 1.7rem;
-    color: $dark-gray;
+    // background-color: $light-gray;
+    // border: .5px solid $light-gray;
+    // border-radius: 25px;
+    width: 55%;
+    max-width: 1300px;
+
+    .form-row{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+    }
+    
   }
+
+  .form-row :nth-child(1){
+    flex-grow: 1;
+}
+  .form-row :nth-child(2) {
+    flex-grow: 1;
+}   
+  
 
   input[type=submit]{
     padding: 15px 20px;
@@ -318,6 +339,11 @@ ul.social-icons > li{
     }
   }
 }
+
+
+
+
+
 .section-about p{
     text-align: center;
     color: $dark-gray;
