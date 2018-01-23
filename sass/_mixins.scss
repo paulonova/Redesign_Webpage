@@ -11,7 +11,7 @@
   min-height: 15rem;
   background-size: cover;
 }
-  
+
 @mixin button-style{
   background-color: rgba(0,0,0,0.0);
   color: $dark-gray;
@@ -27,7 +27,7 @@
 
 @mixin button-scrollback{
   display: none;
-  position: fixed;  
+  position: fixed;
   z-index: 99;
   border: none;
   outline: none;
@@ -48,6 +48,7 @@
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
 }
 
 @mixin float {
