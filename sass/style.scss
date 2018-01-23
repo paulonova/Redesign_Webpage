@@ -194,12 +194,18 @@ input[type=button]:hover{
   }
 
 // Contact form
-h3.contact-us{
-  margin: 30px 0 0 0;
+h1.contact-us{
+  margin: 3rem 0 0 0;
   text-align: center;
   font-family: $font-myriad-pro;
   color: $dark-gray;
   font-size: 1.6rem;
+  @media #{$tablet}{
+    margin: 5rem 0 0 0;
+  }
+  @media #{$desktop}{
+    margin: 8rem 0 1rem 0;
+  }
 }
 
 .form-container{
@@ -242,6 +248,11 @@ input[type=text]:-moz-placeholder, textarea:-moz-placeholder{
 
 input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder{
   color: $placeholder-light-gray;
+}
+
+.form-row-button{
+  display: flex;
+  justify-content: center;
 }
 
 input[type=submit]{
@@ -374,6 +385,17 @@ ul.social-icons > li{
   h3.contact-us{
     font-size: 2.5rem;
   }
+
+  // .form-row imput[type=text]{
+  //   box-sizing: border-box;
+  //   overflow: hidden;
+	// text-overflow: ellipsis;
+	// white-space: nowrap;
+	// font-size: 0.9em;
+	// text-decoration: none;
+	// line-height: normal;
+	// max-height: 3em;
+  // }
 
 
   .form-container{
