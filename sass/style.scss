@@ -12,6 +12,16 @@
 //Header
 .header-container{
   @include header-style($mb-header-photo);
+
+  @media #{$tablet}{
+    background-image: $pt-header-photo;
+    height: 30rem;
+  }
+  @media #{$desktop}{
+    background-image: $dt-header-photo;
+    height: 40rem;
+  }
+
 }
 
 
@@ -22,7 +32,7 @@
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .logo-block img{
@@ -38,6 +48,13 @@
   color: $white;
   margin-top: 9%;
   font-size: 1rem;
+
+  @media #{$tablet}{
+    font-size: 2.2rem;
+  }
+  @media #{$desktop}{
+    font-size: 3.5rem;
+  }
 }
 
 //Navigation
@@ -52,17 +69,30 @@ ul.nav{
 .nav > li{
   display: inline-block;
   padding: 0 10px 0 10px;
+  a{
+    color: $white;
+    font-size: .7rem;
+    text-decoration: none;
+  &:hover{
+    color: $accent-color;
+  }
 }
 
-.nav > li > a{
-  color: $white;
-  font-size: .7rem;
-  text-decoration: none;
+  @media #{$tablet}{
+    padding: 0 25px 0 25px;
+    a{
+      font-size: 1rem;
+    }
+  }
+
+  @media #{$desktop}{
+    padding: 0 35px 0 35px;
+    a{
+      font-size: 1.5rem;
+    }
+  }
 }
 
-.nav > li > a:hover{
-  color: $accent-color;
-}
 
 //About
 .section-about p{
@@ -191,18 +221,19 @@ input[type=button]:hover{
     text-align: center;
   }
 
-// Contact form
+/*Contact form*/
 h1.contact-us{
-  margin: 3rem 0 0 0;
+  margin: 3rem 0 1rem 0;
   text-align: center;
   font-family: $font-myriad-pro;
   color: $dark-gray;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+
   @media #{$tablet}{
-    margin: 5rem 0 0 0;
+    margin: 5rem 0 1rem 0;
   }
   @media #{$desktop}{
-    margin: 8rem 0 1rem 0;
+    margin: 7rem 0 1rem 0;
   }
 }
 
@@ -213,6 +244,45 @@ h1.contact-us{
   padding: 20px;
   font-size: 1rem;
   color: $dark-gray;
+
+  @media #{$tablet}{
+    width: 80%;
+    max-width: 1300px;
+    .form-row{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;      
+      :nth-child(1){
+        margin-right: 10px;
+        flex-grow: 1;
+    }
+      :nth-child(2) {
+        flex-grow: 1;
+    }
+  }
+}
+
+  @media #{$desktop}{
+    width: 55%;
+    max-width: 1300px;
+    .form-row{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      :nth-child(1){
+        margin-right: 10px;
+        flex-grow: 1;
+    }
+      :nth-child(2) {
+      flex-grow: 1;
+    }
+  }
+}
 }
 
 input[type=text],textarea{
@@ -284,6 +354,12 @@ footer{
   background-blend-mode: overlay;
   min-height: 15rem;
   background-size: cover;
+  @media #{$tablet}{
+    min-height: 25rem;
+  }
+  @media #{$desktop}{
+    min-height: 35rem;
+  }
 }
 
 //Footer media icons
@@ -310,7 +386,6 @@ footer{
       }
     }
   }
-
   .footer-adress{
     margin-top: 20px;
     display: flex;
@@ -322,8 +397,69 @@ footer{
       margin: 0;
     }
   }
-}
+  @media #{$tablet}{
+    top: 12rem;
+    width: 100%;
+    height: 100px;  
+    .social-icons{  
 
+      li{
+        margin: 0;
+        &:nth-child(1){
+          padding-right: 2rem;
+        }
+        &:nth-child(2){
+          padding-right: 2rem;
+        }
+        img{
+          width: 60%;
+          height: auto;
+        }
+      }
+    }  
+    .footer-adress{
+      margin-top: 2.5rem;  
+
+      h2.adress{
+        align-self: center;
+        font-size: 1.4rem;
+        margin: 0;
+      }
+    }
+  }
+  @media #{$desktop}{
+    top: 16rem;
+    width: 100%;
+    height: 100px;  
+    .social-icons{  
+
+      li{
+        margin: 0;
+        &:nth-child(1){
+          padding-right: 6rem;
+        }
+        &:nth-child(2){
+          padding-right: 6rem;
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+
+    }  
+    .footer-adress{
+      margin-top: 3rem;  
+      h2.adress{
+        align-self: center;
+        color:$white;
+        font-size: 180%;
+        margin: 16px;
+        margin: 1rem;
+      }
+    }
+  }
+}/*End of footer-social-icons*/
 
 
 h2.adress{
@@ -350,209 +486,9 @@ ul.social-icons > li{
   }
 }
 
-
-
-
-/* Media queries */
-/* MediaQuery for screen-size 768px */
-@media only screen and (min-width: 768px) {
-
-  .header-container{
-    background-image: $pt-header-photo;
-    height: 30rem;
-  }
-
-  .logo-block p.slogan{
-    font-size: 2.2rem;
-  }
-
-  .nav > li{
-    padding: 0 25px 0 25px;
-  }
-
-  .nav > li > a{
-    font-size: 1rem;
-  }
-
-  //About
-  .section-about p{
-     font-size: 1.5em;
-  }
-
-  // Contact form
-  h3.contact-us{
-    font-size: 2.5rem;
-  }
-
-  // .form-row imput[type=text]{
-  //   box-sizing: border-box;
-  //   overflow: hidden;
-	// text-overflow: ellipsis;
-	// white-space: nowrap;
-	// font-size: 0.9em;
-	// text-decoration: none;
-	// line-height: normal;
-	// max-height: 3em;
-  // }
-
-
-  .form-container{
-    width: 80%;
-    max-width: 1300px;
-
-    .form-row{
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      justify-content: space-between;
-
-      :nth-child(1){
-        margin-right: 10px;
-        flex-grow: 1;
-    }
-      :nth-child(2) {
-        flex-grow: 1;
-    }
-  }
-}
-
-
-  // Footer
-  footer{
-    min-height: 25rem;
-  }
-
-  .footer-social-icons{
-    top: 12rem;
-    width: 100%;
-    height: 100px;
-
-    .social-icons{
-
-      li{
-        margin: 0;
-        &:nth-child(1){
-          padding-right: 2rem;
-        }
-        &:nth-child(2){
-          padding-right: 2rem;
-        }
-
-        img{
-          width: 60%;
-          height: auto;
-        }
-      }
-    }
-
-    .footer-adress{
-      margin-top: 2.5rem;
-
-      h2.adress{
-        align-self: center;
-        font-size: 1.4rem;
-        margin: 0;
-      }
-    }
-  }
-
-}
-
-
-//Media query for screen-size 1366px
-@media only screen and (min-width: 1366px) {
-
-  .header-container{
-    background-image: $dt-header-photo;
-    height: 40rem;
-  }
-
-  .logo-block p.slogan{
-    font-size: 3.5rem;
-  }
-
-  .nav > li{
-    padding: 0 35px 0 35px;
-  }
-
-  .nav > li > a{
-    font-size: 1rem;
-  }
-
-  // Contact form
-  h3.contact-us{
-    font-size: 3rem;
-  }
-
-
-  .form-container{
-    width: 55%;
-    max-width: 1300px;
-
-    .form-row{
-      display: -webkit-box;
-      display: -moz-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-
-      :nth-child(1){
-        margin-right: 10px;
-        flex-grow: 1;
-    }
-      :nth-child(2) {
-      flex-grow: 1;
-    }
-  }
-}
-
-
+@media #{$desktop}{
   input[type=submit]{
     padding: 15px 20px;
   }
-
-  // Footer
-  footer{
-    background-image: url("../images/footer-photo.svg");
-    min-height: 35rem;
-  }
-
-  .footer-social-icons{
-    top: 16rem;
-    width: 100%;
-    height: 100px;
-
-    .social-icons{
-
-      li{
-        margin: 0;
-        &:nth-child(1){
-          padding-right: 6rem;
-        }
-        &:nth-child(2){
-          padding-right: 6rem;
-        }
-
-        img{
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-
-    .footer-adress{
-      margin-top: 36px;
-      margin-top: 2rem;
-
-      p.adress{
-        align-self: center;
-        color:$white;
-        font-size: 180%;
-        margin: 16px;
-        margin: 1rem;
-      }
-    }
-  }
 }
+
