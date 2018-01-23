@@ -96,14 +96,14 @@ ul.nav{
   }
   @media #{$desktop}{
     justify-content: space-between;
-    padding:2em;
+    padding: 2em;
     img{
       width: 100%;
     }
   }
 }
 
-.recentProjectContainer{
+  .recentProjectContainer{
   padding-top: 32px;
   padding-top: 2em;
 
@@ -143,13 +143,17 @@ input[type=button]:hover{
 .reviews{
   @include flex;
   justify-content: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 .review{
   width: 270px;
   width: 15em;
   padding: 30px;
   padding: 2em;
-
+  img{
+    width: 200px;
+  }
   :nth-child(2){ //height to keep the quoted person's name at bottom
      height: 80px;
      height: 5em;
