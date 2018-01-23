@@ -265,8 +265,6 @@ button#myBtn{
 }
 
 
-
-
 // Footer
 footer{
   background-image: url("../images/footer-photo.svg");
@@ -340,17 +338,14 @@ ul.social-icons > li{
       opacity: 0.5;
       filter: alpha(opacity=50); /* For IE8 and earlier */
     }
-
   }
-
 }
 
 
 
 
-
 /* Media queries */
-//MediaQuery for screen-size 768px
+/* MediaQuery for screen-size 768px */
 @media only screen and (min-width: 768px) {
 
   .header-container{
@@ -380,15 +375,29 @@ ul.social-icons > li{
     font-size: 2.5rem;
   }
 
-  .form-container{
-    width: 400px;
-    font-size: 1.5rem;
-    color: $dark-gray;
-  }
 
-  input[type=submit]{
-    padding: 15px 20px;
+  .form-container{
+    width: 80%;
+    max-width: 1300px;
+
+    .form-row{
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-between;
+      
+      :nth-child(1){
+        margin-right: 10px;
+        flex-grow: 1;
+    }
+      :nth-child(2) {
+        flex-grow: 1;
+    }
   }
+}
+
 
   // Footer
   footer{
@@ -468,15 +477,15 @@ ul.social-icons > li{
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+
+      :nth-child(1){
+        margin-right: 10px;
+        flex-grow: 1;
     }
-
+      :nth-child(2) {
+      flex-grow: 1;
+    }
   }
-
-  .form-row :nth-child(1){
-    flex-grow: 1;
-}
-  .form-row :nth-child(2) {
-    flex-grow: 1;
 }
 
 
