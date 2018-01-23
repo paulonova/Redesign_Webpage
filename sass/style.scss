@@ -4,7 +4,7 @@
 @import "_mixins.scss";
 
 
-//Clearfix - (move to other file??)
+/*Clearfix - (move to other file??)*/
 .clearfix {
      clear: left;
 }
@@ -16,7 +16,7 @@
 }
 
 
-//Logo and slogan
+/*Logo and slogan/*
 .logo-block img , p.slogan{
     margin: 0;
     position: absolute;
@@ -41,7 +41,7 @@
   font-size: 1rem;
 }
 
-//Navigation
+/*Navigation*/
 ul.nav{
   background-color: $dark-gray;
   list-style: none;
@@ -65,7 +65,7 @@ ul.nav{
   color: $accent-color;
 }
 
-// Contact form
+/*Contact form*/
 h3.contact-us{
   margin: 30px 0 0 0;
   text-align: center;
@@ -95,7 +95,7 @@ input[type=text],textarea{
 }
 
 
-// Placeholder webkits
+/*Placeholder webkits*/
 input[type=text]::placeholder, textarea::placeholder{
   color: $placeholder-light-gray;
 }
@@ -126,7 +126,7 @@ input[type=submit]:hover{
 }
 
 
-// Button scrollup
+/*Button scrollup*/
 
 button#myBtn{
   @include button-scrollback;
@@ -140,7 +140,7 @@ button#myBtn{
 
 
 
-// Footer
+/*Footer*/
 footer{
   background-image: url("../images/footer-photo.svg");
   background-repeat: no-repeat;
@@ -152,7 +152,7 @@ footer{
   background-size: cover;
 }
 
-//Footer media icons
+/*Footer media icons*/
 .footer-social-icons{
   text-align: center;
   margin: 2em auto;
@@ -213,7 +213,7 @@ ul.social-icons > li{
 
 
 /* Media queries */
-//MediaQuery for screen-size 768px
+/*MediaQuery for screen-size 768px*/
 @media only screen and (min-width: 768px) {
 
   .header-container{
@@ -233,12 +233,12 @@ ul.social-icons > li{
     font-size: 1.5rem;
   }
 
-  //About
+  /*About*/
   .section-about p{
      font-size: 1.5em;
   }
 
-  // Contact form
+  /* Contact form */
   h3.contact-us{
     font-size: 2.5rem;
   }
@@ -253,7 +253,7 @@ ul.social-icons > li{
     padding: 15px 20px;
   }
 
-  // Footer
+  /*Footer*/
   footer{
     background-image: url("../images/footer-photo.svg");
     min-height: 25rem;
@@ -280,7 +280,7 @@ ul.social-icons > li{
 }
 
 
-//Media query for screen-size 1366px
+/*Media query for screen-size 1366px*/
 @media only screen and (min-width: 1366px) {
 
   .header-container{
@@ -300,7 +300,7 @@ ul.social-icons > li{
     font-size: 2rem;
   }
 
-  // Contact form
+  /*Contact form*/
   h3.contact-us{
     font-size: 3rem;
   }
@@ -332,7 +332,7 @@ ul.social-icons > li{
     padding: 15px 20px;
   }
 
-  // Footer
+  /*Footer*/
   footer{
     background-image: url("../images/footer-photo.svg");
     min-height: 35rem;
@@ -369,7 +369,7 @@ ul.social-icons > li{
     @media #{$tablet}{ font-size: 1.5em;}
 }
 
-//Cases - Projects
+/*Cases - Projects*/
 .recentProjects{
   @include flex;
   justify-content: center;
@@ -392,7 +392,7 @@ ul.social-icons > li{
 @include button-style;
 }
 
-//Reviews
+/*Reviews*/
 .reviews{
   @include flex;
   justify-content: center;
@@ -408,7 +408,7 @@ ul.social-icons > li{
   float: right;
 }
 
-//The Team
+/*The Team*/
 .section-team{
   background-color: $light-gray;
   p{
