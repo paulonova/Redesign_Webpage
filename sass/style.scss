@@ -356,7 +356,10 @@ button#myBtn{
 
 // Footer
 footer{
-  background-image: url("../images/footer-photo.svg");
+  background-image: url("../images/footer-photo.png");
+  background-image: 
+    linear-gradient(transparent, transparent),
+    url("../images/footer-photo.svg");
   background-repeat: no-repeat;
   position: relative;
   width:100%;
