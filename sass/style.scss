@@ -103,7 +103,6 @@ ul.nav{
   }
 }
 .recentProject{
-  /*@include float;*/
   @include flex;
   justify-content: center;
   img{
@@ -216,7 +215,7 @@ input[type=button]:hover{
     text-align: center;
   }
 
-/*Contact form*/
+//Contact form
 h1.contact-us{
   margin: 3rem 0 1rem 0;
   text-align: center;
