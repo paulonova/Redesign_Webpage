@@ -162,6 +162,12 @@ input[type=button]:hover{
 }
 
 //Reviews
+#fallback-shigoto{
+  background: url(images/shigoto.png);
+  width: 200px;
+  height: 200px;
+}
+
 .reviews{
   @include flex;
   justify-content: center;
