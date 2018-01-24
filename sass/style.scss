@@ -256,17 +256,19 @@ h1.contact-us{
       display: flex;
       justify-content: space-between;
       :nth-child(1){
-        margin-right: 10px;
+        padding: 16px;
+        padding: 1rem;
         flex-grow: 1;
     }
       :nth-child(2) {
+        padding: 16px;
+        padding: 1rem;
         flex-grow: 1;
     }
   }
 }
 
   @media #{$desktop}{
-    width: 55%;
     max-width: 1300px;
     .form-row{
       display: -webkit-box;
@@ -275,10 +277,13 @@ h1.contact-us{
       display: -webkit-flex;
       display: flex;
       :nth-child(1){
-        margin-right: 10px;
+        padding: 16px;
+        padding: 1rem;
         flex-grow: 1;
     }
       :nth-child(2) {
+        padding: 16px;
+        padding: 1rem;
       flex-grow: 1;
     }
   }
@@ -288,12 +293,17 @@ h1.contact-us{
 input[type=text],textarea{
   width: 100%;
   padding: 12px;
-  border: 1px solid $light-gray;
+  border: 2px solid $light-gray;
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+.form-row-textarea{
+  @media #{$tablet}{padding: 16px; padding: 1rem;}
+
 }
 
 
