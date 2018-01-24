@@ -14,8 +14,3 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-if (!Modernizr.svg) {
-  $("img[src$='.svg']")
-    .attr("src", 'images/shigoto.svg');
-}
