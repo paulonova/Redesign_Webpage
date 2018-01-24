@@ -6,14 +6,17 @@
 //Header
 .header-container{
   @include header-style($mb-header-photo);
-
+  height: 300px;
+  overflow: hidden;
   @media #{$tablet}{
     background-image: $pt-header-photo;
     height: 30rem;
+    height: 480px;
   }
   @media #{$desktop}{
     background-image: $dt-header-photo;
     height: 40rem;
+    height: 640px;
   }
 }
 
@@ -205,6 +208,8 @@ input[type=button]:hover{
   @include flex;
   justify-content: space-around;
   text-align: center;
+  margin: 0 auto;
+  max-width: 720px;
   img{
     border-radius: 50%;
     height: 200px;
