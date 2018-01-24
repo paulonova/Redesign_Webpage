@@ -125,13 +125,11 @@ ul.nav{
 }
 
   .recentProjectContainer{
-  padding-top: 32px;
   padding-top: 2em;
   @media #{$tablet}{
     width: 15em;
   }
   @media #{$desktop}{
-    width: 300px;
     width: 25em;
   }
 }
@@ -147,6 +145,7 @@ ul.nav{
     width: 15em;
   }
   @media #{$desktop}{
+    width: 300px;
     width: 20em;
   }
 }
