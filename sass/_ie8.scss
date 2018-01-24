@@ -1,5 +1,5 @@
 @import "_mixins.scss";
-//Clearfix
+/*//Clearfix
 .clearfix {
      clear: left;
 }
@@ -161,7 +161,7 @@ input[type=button]:hover{
     text-align: center;
   }
 
-/*Contact form*/
+//Contact form
 h1.contact-us{
   margin: 3rem 0 1rem 0;
   text-align: center;
@@ -206,7 +206,6 @@ h1.contact-us{
 }
 
   @media #{$desktop}{
-    width: 55%;
     max-width: 1300px;
     .form-row{
       display: -webkit-box;
@@ -407,7 +406,7 @@ ul.social-icons > li{
     width: 55%;
     height: auto;
     &:hover{
-      filter: alpha(opacity=50); /* For IE8 and earlier */
+      filter: alpha(opacity=50); // For IE8 and earlier
     }
   }
 }
