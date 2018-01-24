@@ -1,6 +1,26 @@
-body{
-  background-color: black;
+@import "_mixins.scss";
+//Header
+
+//About us
+
+//Recent projects
+.recentProject{
+  @include float;
 }
-p{
-  color:#ffffff;
+
+//Reviews
+.review{
+  @include float;
+}
+
+//The team
+.img-container{
+  @include float;
+}
+
+//Contact form
+
+//Footer
+.footer{
+  background-image: url("../images/footer-photo.png");
 }
