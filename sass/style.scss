@@ -103,7 +103,6 @@ ul.nav{
   }
 }
 .recentProject{
-  /*@include float;*/
   @include flex;
   justify-content: center;
   img{
@@ -128,7 +127,6 @@ ul.nav{
   .recentProjectContainer{
   padding-top: 32px;
   padding-top: 2em;
-
   @media #{$tablet}{
     width: 15em;
   }
@@ -179,6 +177,7 @@ input[type=button]:hover{
   }
 }
 .review{
+  @include float;
   width: 270px;
   width: 15em;
   padding: 16px;
@@ -222,7 +221,7 @@ input[type=button]:hover{
     text-align: center;
   }
 
-/*Contact form*/
+//Contact form
 h1.contact-us{
   margin: 3rem 0 1rem 0;
   text-align: center;
