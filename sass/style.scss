@@ -127,7 +127,6 @@ ul.nav{
   .recentProjectContainer{
   padding-top: 32px;
   padding-top: 2em;
-
   @media #{$tablet}{
     width: 15em;
   }
@@ -178,6 +177,7 @@ input[type=button]:hover{
   }
 }
 .review{
+  @include float;
   width: 270px;
   width: 15em;
   padding: 16px;
