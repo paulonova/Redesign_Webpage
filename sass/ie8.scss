@@ -1,0 +1,45 @@
+@import "_mixins.scss";
+@import "_variables.scss";
+
+//Header
+
+//About us
+
+//Recent projects
+.recentProjects{
+  padding-left: 10%;
+}
+.recentProject{
+  padding: 5%;
+}
+.recentProjectContainer{
+  @include float;
+  width: 300px;
+  padding: 5%;
+  :nth-child(2){
+    float:right;
+  }
+}
+
+//Reviews
+.reviews{
+  padding-left: 10%;
+  padding-rigth: 10%;
+}
+.review{
+  @include float;
+  padding: 5%;
+}
+
+//The team
+.img-container{
+  @include float;
+}
+
+//Contact form
+
+
+//Footer
+.footer{
+  background-image: url("../images/footer-photo.png");
+}

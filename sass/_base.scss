@@ -1,5 +1,10 @@
 @import "_mixins.scss";
 
+//Clearfix - (move to other file??)
+.clearfix {
+     clear: left;
+}
+
 *{  //Things to be implemented on all elements
 	font-family: $font-myriad-pro;
 }
@@ -21,7 +26,6 @@ a{
 p{
 	font-weight: 300;
 	font-size: 100%;
-	font-size: 1em;
 }
 
 h1 {
@@ -41,11 +45,17 @@ li{
  }
 
 .container {
+    max-width: 880px;
     max-width: $full-width;
     margin: 0 auto;
+    overflow: auto;
     padding: 32px 16px 32px 16px;
     padding: 2rem 1rem 2rem 1rem;
-    @media #{$tablet}{ padding: 80px 16px 80px 16px;}
-    @media #{$tablet}{ padding: 5rem 1rem 5rem 1rem;}
-    @media #{$desktop}{ padding: 10rem 1rem 10rem 1rem;}
+    @media #{$tablet}{
+			padding: 80px 16px 80px 16px;
+			padding: 5rem 1rem 5rem 1rem;
+		}
+    @media #{$desktop}{
+			padding: 160px 16px 160px 16px;
+			padding: 10rem 1rem 10rem 1rem;}
 }
