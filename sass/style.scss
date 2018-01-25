@@ -256,16 +256,15 @@ h1.contact-us{
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
-      justify-content: space-between;
       :nth-child(1){
         padding: 16px;
         padding: 1rem;
-        flex-grow: 1;
+        flex: 1;
     }
       :nth-child(2) {
         padding: 16px;
         padding: 1rem;
-        flex-grow: 1;
+        flex: 1;
     }
   }
 }
@@ -281,12 +280,12 @@ h1.contact-us{
       :nth-child(1){
         padding: 16px;
         padding: 1rem;
-        flex-grow: 1;
+        flex: 1;
     }
       :nth-child(2) {
         padding: 16px;
         padding: 1rem;
-      flex-grow: 1;
+        flex: 1;
     }
   }
 }
