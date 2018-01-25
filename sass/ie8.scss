@@ -1,16 +1,13 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 
-body{
-
-}
 //Header
 
 //About us
 
 //Recent projects
 .recentProjects{
-  padding-left: 15%;
+  padding-left: 10%;
 }
 .recentProject{
   padding: 5%;
@@ -19,7 +16,11 @@ body{
   @include float;
   width: 300px;
   padding: 5%;
+  :nth-child(2){
+    float:right;
+  }
 }
+
 //Reviews
 .reviews{
   padding-left: 10%;
@@ -36,6 +37,7 @@ body{
 }
 
 //Contact form
+
 
 //Footer
 .footer{
