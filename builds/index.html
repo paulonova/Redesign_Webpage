@@ -8,8 +8,12 @@
   <title>Redesign</title>
   <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-  <script src="js/script.js" prefer></script>
+  <script src="js/modernizr-custom.js" prefer></script>
+  <script src="js/script.js"></script>
+  <!--[if lt IE 9]>
   <script src="js/html5shiv.js" prefer></script>
+  <link rel="stylesheet" href="css/ie8.css">
+  <![endif]-->
 </head>
 
 <body>
@@ -92,23 +96,28 @@
 <!-- Reviews -->
 <section id="reviews" class="reviews">
   <article class="review">
-    <img src="images/shigoto.svg" alt="">
+    <svg width="200" height="200">
+    <image xlink:href="images/shigoto.svg" src="images/shigoto.png" width="200" height="200"/>
+    </svg>
       <p>”Redesign changed the whole potential of our website. A true from
         zero to hero story! They did everything we could have hoped for.
         We can truly recomend redesign!”</p>
-    </div>
-    <p>-Donna Noble, CEO</p>
+      <p>-Donna Noble, CEO</p>
   </article>
 
   <article class="review">
-    <img src="images/gamez.svg" alt="">
+    <svg width="200" height="200">
+    <image xlink:href="images/gamez.svg" src="images/gamez.png" width="200" height="200"/>
+    </svg>
     <p>”I’ve never been as happy as when i saw our new site. We are finally back
       in the game. And the service was really good as well”</p>
     <p>-Rudolf Heinrich, CTO</p>
   </article>
 
   <article class="review">
-    <img src="images/again.svg" alt="">
+    <svg width="200" height="200">
+    <image xlink:href="images/again.svg" src="images/again.png" width="200" height="200"/>
+    </svg>
     <p>”We wery truly satisfied with
       the new design. Redesign is a delight to work with.” </p>
     <p>-Daniell Hall, CFO</p>
@@ -151,6 +160,7 @@
   <!--Contact-->
 
   <section>
+    <div class="container">
     <h1 class="contact-us">Contact Us</h1>
     <div>
       <form class="form-container">
@@ -188,15 +198,15 @@
         </div>
       </form>
     </div>
+    </div>
   </section>
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
   <!--Footer-->
-  <footer>
+<footer>
     <div class="footer-social-icons">
-
       <ul class="social-icons">
         <li>
           <img src="images/ic-facebook.png">
@@ -210,13 +220,12 @@
       </ul>
 
       <div class="footer-adress">
-          <h2 class="adress">Mäster Samuelsgatan 42</h2>
-          <h2 class="adress">111 57 - Stockholm</h2>
+          <p class="adress">Mäster Samuelsgatan 42</p>
+          <p class="adress">111 57 Stockholm</p>
       </div>
 
     </div>
   </footer>
-
 
 </body>
 
