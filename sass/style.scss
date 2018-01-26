@@ -179,6 +179,7 @@ input[type=button]:hover{
   }
 }
 .review{
+  @include float;
   width: 270px;
   width: 15em;
   padding: 16px;
@@ -218,6 +219,7 @@ input[type=button]:hover{
 }
 
 .img-container{
+  @include float;
    margin: 20px;
     margin: 1rem;
     text-align: center;
@@ -256,15 +258,16 @@ h1.contact-us{
       display: -ms-flexbox;
       display: -webkit-flex;
       display: flex;
+      justify-content: space-between;
       :nth-child(1){
         padding: 16px;
         padding: 1rem;
-        flex: 1;
+        flex-grow: 1;
     }
       :nth-child(2) {
         padding: 16px;
         padding: 1rem;
-        flex: 1;
+        flex-grow: 1;
     }
   }
 }
@@ -280,12 +283,12 @@ h1.contact-us{
       :nth-child(1){
         padding: 16px;
         padding: 1rem;
-        flex: 1;
+        flex-grow: 1;
     }
       :nth-child(2) {
         padding: 16px;
         padding: 1rem;
-        flex: 1;
+      flex-grow: 1;
     }
   }
 }
