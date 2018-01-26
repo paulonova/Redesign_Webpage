@@ -179,6 +179,7 @@ input[type=button]:hover{
   }
 }
 .review{
+  @include float;
   width: 270px;
   width: 15em;
   padding: 16px;
@@ -218,6 +219,7 @@ input[type=button]:hover{
 }
 
 .img-container{
+  @include float;
    margin: 20px;
     margin: 1rem;
     text-align: center;
