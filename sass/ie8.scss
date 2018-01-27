@@ -6,30 +6,45 @@
 .header-container{
   background-color: rgb(255, 0, 128);
   background-image: $dt-header-photo;
-  height: 640px;
-  // width: 150em;
+  width: 100%;
+  height: 450px;  
   margin: 0;
   
 }
 
-//Logo and slogan
-.logo-block img{
-  position: relative;
-  display: block;
-  top: 150px;
-  margin-left: -28%;
-  padding: 0; 
-  width: 55%;
 
+.logo-block{
+  width: 100%;
+  margin: 0 auto;
+
+  img{
+    position: relative;
+    display: block;
+    top: 150px;
+    margin-left: -28%;
+    padding: 0; 
+    width: 55%;
+  }
+
+  p.slogan{
+    position: relative;
+    display: block;
+    // font-size: 250%;
+    font-size: 2.5em;
+    margin-left: -150%;
+    margin-top: 3.5em;
+    color: rgb(58,58,58);
+    text-align: center;
+  }
 }
 
-.logo-block p.slogan{
-  font-size: 400%;
-  color: rgb(58,58,58);
-  text-align: center;
-  margin-top: 75px;
-  margin-left: -22%;
-}
+// .logo-block p.slogan{
+//   font-size: 250%;
+//   color: rgb(58,58,58);
+//   text-align: center;
+//   // margin-top: 75px;
+//   // margin-left: -22%;
+// }
 
 body{
   // background-color: rgb(0, 132, 255);
