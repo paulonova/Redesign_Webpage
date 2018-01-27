@@ -2,16 +2,13 @@
 @import "_variables.scss";
 
 //Header
-
 .header-container{
-  background-color: rgb(255, 0, 128);
   background-image: $dt-header-photo;
   width: 100%;
   height: 450px;  
   margin: 0;
   
 }
-
 
 .logo-block{
   width: 100%;
@@ -25,30 +22,17 @@
     padding: 0; 
     width: 55%;
   }
-
   p.slogan{
     position: relative;
     display: block;
-    // font-size: 250%;
     font-size: 2.5em;
     margin-left: -150%;
     margin-top: 3.5em;
-    color: rgb(58,58,58);
+    color: rgb(253, 253, 253);
     text-align: center;
   }
 }
 
-// .logo-block p.slogan{
-//   font-size: 250%;
-//   color: rgb(58,58,58);
-//   text-align: center;
-//   // margin-top: 75px;
-//   // margin-left: -22%;
-// }
-
-body{
-  // background-color: rgb(0, 132, 255);
-}
 
 //About us
 
@@ -56,6 +40,7 @@ body{
 .recentProject{
   padding: 5%;
 }
+
 .recentProjectContainer{
   width: 300px;
   padding: 5%;
@@ -77,17 +62,6 @@ body{
 
 //Contact form
 
-//Footer
-// .footer{
-//   // background-image: url("../images/footer-photo.svg");
-//   // background-repeat: no-repeat;
-//   // position: relative;
-//   // width:100%;
-//   // height: 100%;
-//   // background-blend-mode: overlay;
-//   // min-height: 15rem;
-//   // background-size: cover;
-// }
 footer{
   background-image: url("../images/footer-photo.png");
   height: 560px;
