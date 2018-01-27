@@ -6,36 +6,25 @@
 //About us
 
 //Recent projects
-.recentProjects{
-  padding-left: 10%;
-}
 .recentProject{
   padding: 5%;
 }
 .recentProjectContainer{
-  @include float;
   width: 300px;
   padding: 5%;
-  :nth-child(2){
-    float:right;
-  }
 }
 
 //Reviews
-.reviews{
-  padding-left: 10%;
-  padding-rigth: 10%;
-}
+
 .review{
-  padding: 5%;
+  width: 25%;
+  padding-left:32px;
+  padding-right: 32px;
 }
 
 //The team
-.img-container{
-}
 
 //Contact form
-
 
 //Footer
 .footer{
