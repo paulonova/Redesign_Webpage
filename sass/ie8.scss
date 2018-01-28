@@ -2,6 +2,37 @@
 @import "_variables.scss";
 
 //Header
+.header-container{
+  background-image: $dt-header-photo;
+  width: 100%;
+  height: 450px;  
+  margin: 0;
+  
+}
+
+.logo-block{
+  width: 100%;
+  margin: 0 auto;
+
+  img{
+    position: relative;
+    display: block;
+    top: 150px;
+    margin-left: -28%;
+    padding: 0; 
+    width: 55%;
+  }
+  p.slogan{
+    position: relative;
+    display: block;
+    font-size: 2.5em;
+    margin-left: -150%;
+    margin-top: 3.5em;
+    color: rgb(253, 253, 253);
+    text-align: center;
+  }
+}
+
 
 //About us
 
@@ -9,12 +40,17 @@
 .recentProject{
   padding: 5%;
 }
+
 .recentProjectContainer{
   width: 300px;
   padding: 5%;
 }
 
 //Reviews
+.reviews{
+  padding-left: 10%;
+  padding-right: 10%;
+}
 
 .review{
   width: 25%;
@@ -26,7 +62,6 @@
 
 //Contact form
 
-//Footer
 footer{
   background-image: url("../images/footer-photo.png");
   height: 560px;
