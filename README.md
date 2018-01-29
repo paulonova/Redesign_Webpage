@@ -1,11 +1,24 @@
 # Redesign_Webpage
 
-HTML och CSS Gruppuppgift 2018
+HTML and CSS group assignment 2017-2018
+Nackademin
 
-Detta är en ändring gjord av Alex
-<hr>
-<h4>Header-Färger:#FFFFF / rgb(255,255,255)(Vit) </h4>
-<h4>Grå #dddddd / rgb(221,221,221) </h4>
-<h4>Mörkgrå #3a3a3a / rgb(58,58,58) </h4>
-<h4>Text, footer: Orange #d3672f / rgb(211,103,47)</h4>
+Website link: https://paulonova.github.io/Redesign_Webpage/  <br>
+GitHub: https://github.com/paulonova/Redesign_Webpage  <br>
+GitHub Mockup: https://github.com/paulonova/RedesignWorkGrup
+
+
+Alexander Afzelius Puccini, Paulo Vila Nova, Ellinor Nilsson Kaufeldt
+
+How we divided the work:
+Header, Contact form, Footer - Paulo
+About us, The Team - Alexander
+Recent projects, Reviews - Ellinor
+
+Some parts that overlapped eachother we split between us. And if someone couldn't solve a part someone else jumped in and helped if they could.
+
+We worked from mobile first and used graceful degregation.
+
+We had regular meetings to discuss what we had done and if the rest of the group liked it or wanted to change something. And before we left the meeting we talked about what needed to be done until next time.
+We also communicated via Slack and used Trello to keep track of our progress.
 
