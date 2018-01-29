@@ -1,6 +1,7 @@
 @import "_mixins.scss";
 @import "_variables.scss";
 
+
 //Header
 .header-container{
   background-image: $dt-header-photo;
@@ -64,7 +65,9 @@
 
 footer{
   background-image: url("../images/footer-photo.png");
+  background-size: cover;
   height: 560px;
+  width: 100%;
 }
 
 .footer-social-icons{
