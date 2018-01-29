@@ -4,10 +4,18 @@
 
 //Header
 .header-container{
-  background-image: $dt-header-photo;
-  height: 550px;  
+  background-image: $header-photoIE8;
+  height: 600px;  
   margin: 0 auto;
   
+}
+
+//Nav
+.nav > li{
+  margin-right: 30px;
+  a{
+    font-size: 1.3em;
+  }
 }
 
 .logo-block{
@@ -34,8 +42,6 @@
 }
 
 
-//About us
-
 //Recent projects
 .recentProject{
   padding: 5%;
@@ -58,10 +64,27 @@
   padding-right: 32px;
 }
 
-//The team
+
 
 //Contact form
 
+.form-container{
+  width: 80%;
+}
+
+input[type=text],textarea{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid $light-gray;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+//Footer
 footer{
   background-image: url("../images/footer-photo.png");
   background-size: cover;
