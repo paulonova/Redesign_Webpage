@@ -1,0 +1,93 @@
+.header-container {
+  background-image: url("../images/header-photoIE8.jpg");
+  height: 600px;
+  margin: 0 auto;
+}
+
+.nav > li {
+  margin-right: 30px;
+}
+
+.nav > li a {
+  font-size: 1.3em;
+}
+
+.logo-block {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo-block img {
+  position: relative;
+  display: block;
+  top: 150px;
+  margin-left: -28%;
+  padding: 0;
+  width: 55%;
+}
+
+.logo-block p.slogan {
+  position: relative;
+  display: block;
+  font-size: 2.5em;
+  margin-left: -150%;
+  margin-top: 3.5em;
+  color: #fdfdfd;
+  text-align: center;
+}
+
+.recentProject {
+  padding: 5%;
+}
+
+.recentProjectContainer {
+  width: 300px;
+  padding: 5%;
+}
+
+.reviews {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.review {
+  width: 25%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.form-container {
+  width: 80%;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #dddddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+footer {
+  background-image: url("../images/footer-photo.png");
+  background-size: cover;
+  height: 560px;
+  width: 100%;
+}
+
+.footer-social-icons {
+  top: 350px;
+}
+
+.ie8-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.ie8-padding-2 {
+  padding-top: 100px;
+  padding-bottom: 0px;
+}
