@@ -3,7 +3,7 @@
 HTML and CSS group assignment 2017-2018
 Nackademin
 
-Website link: https://paulonova.github.io/Redesign_Webpage/
+Website link: https://paulonova.github.io/Redesign_Webpage/  <br>
 GitHub: https://github.com/paulonova/Redesign_Webpage
 
 
